@@ -1,4 +1,34 @@
+import "./Header.css";
+import logo from "../../assets/image.png"
+
 function Header(){
-    return<h1> Sou um Header</h1>
+    return(
+    <nav> 
+      <div>
+        <img src={logo} alt="logo" /> 
+        </div>  
+        
+        <ul>
+        {/* li = list item */}
+        <a href="#sobre">
+          <li>Sobre</li>
+        </a>
+        <a href="#servicos">
+          <li>Serviços</li>
+        </a>
+        <a href="#areas-de-atuacao">
+          <li>Áreas de atuação</li>
+        </a>
+        <a href="#depoimentos">
+          <li>Depoimentos</li>
+        </a>
+        <a href="#contato">
+          <li>Contato</li>
+        </a>
+      </ul>
+
+
+<button> Agenda Consulta</button>
+    </nav>);
 }
 export default Header;

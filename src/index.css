@@ -1,0 +1,36 @@
+:root {
+  font-family: "Inter", sans-serif;
+  color: #1f2937;
+  background-color: #ffffff;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+}
+/* Reset básico - dizemos pro navegador que não queremos o estilo padrão */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*{
+margin: 0;
+padding: 0;
+}
+
+/* Links */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Listas */
+ul,
+ol {
+  list-style: none;
+}

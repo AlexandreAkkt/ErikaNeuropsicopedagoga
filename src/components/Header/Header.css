@@ -1,0 +1,36 @@
+/* Header.css */
+nav {
+  display: flex; /* exibe os itens da lista em linha */
+  align-items: center; /* centraliza verticalmente os elementos dentro no container */
+  justify-content: space-between; /* distribui os elementos com espaço entre eles */
+  max-width: 1200px; /* define a largura máxima do container */
+  margin: 0 auto; /* centraliza o container horizontalmente */
+  padding: 20px; /* adiciona espaçamento interno ao container */
+}
+
+nav img {
+  width: 80px; /* define a largura da imagem */
+  height: auto; /* mantém a proporção da imagem */
+  display: block; /* remove o espaço em branco abaixo da imagem */
+}
+
+nav ul {
+  display: flex; /* exibe os itens da lista em linha */
+  gap: 20px; /* adiciona espaçamento entre os itens da lista */
+  margin: 0; /* remove a margem padrão da lista */
+  padding: 0; /* remove o preenchimento padrão da lista */
+}
+
+/* Estiliza os itens da lista com pseudo-elemento */
+nav ul li:hover {
+  color: #2b7a78;
+}
+
+nav button {
+  background-color: #2b7a78; /* define a cor de fundo do botão */
+  color: white; /* define a cor do texto do botão */
+  border: none; /* remove a borda do botão */
+  padding: 10px 20px; /* adiciona espaçamento interno ao botão */
+  cursor: pointer; /* muda o cursor para indicar que é clicável */
+  font-weight: bold; /* define a espessura da fonte do botão */
+}
