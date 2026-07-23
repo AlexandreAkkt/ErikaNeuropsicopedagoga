@@ -6,7 +6,7 @@ function Hero() {
     <section className="hero">
       <div className="hero-content">
         <span className="hero-tag">
-          ✨ Cuidado especializado para seu desenvolvimento
+           Cuidado especializado para seu desenvolvimento
         </span>
 
         <h1>
