@@ -1,4 +1,41 @@
-function Hero(){
-    return<h1> Sou um Hero</h1>
+import "./Hero.css";
+import erika from "../../assets/erika.png";
+
+function Hero() {
+  return (
+    <section className="hero">
+      <div className="hero-content">
+        <span className="hero-tag">
+          ✨ Cuidado especializado para seu desenvolvimento
+        </span>
+
+        <h1>
+          Neuropsicopedagogia com <br />
+          afeto e ciência
+        </h1>
+
+        <p>
+          Apoio especializado para crianças, adolescentes e adultos que
+          enfrentam dificuldades de aprendizagem, com uma abordagem
+          integrativa e humanizada.
+        </p>
+
+        <div className="hero-buttons">
+          <button className="button-primary">
+            Agendar Avaliação
+          </button>
+
+          <button className="button-secondary">
+            Saiba Mais
+          </button>
+        </div>
+      </div>
+
+      <div className="hero-image">
+        <img src={erika} alt="Erika - Neuropsicopedagoga" />
+      </div>
+    </section>
+  );
 }
+
 export default Hero;

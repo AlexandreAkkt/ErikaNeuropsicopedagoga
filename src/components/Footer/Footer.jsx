@@ -3,7 +3,7 @@ import "./Footer.css";
 function Footer() {
   return (
     <footer className="footer">
-      <h2>🧠 NeuroPsico</h2>
+      <h2>🧠 ErikaNeuroPsicoPedagoga</h2>
 
       <p>Neuropsicopedagogia com afeto e ciência</p>
 
