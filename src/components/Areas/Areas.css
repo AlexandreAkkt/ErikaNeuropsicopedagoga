@@ -1,43 +1,66 @@
-
+/* Container principal da seção */
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  margin: 20px;
-  padding: 20px;
+  max-width: 1200px;          /* Largura máxima da seção */
+  margin: 0 auto;             /* Centraliza na tela */
+  padding: 80px 20px;         /* Espaçamento interno */
 }
 
+/* Container do título e subtítulo */
 .container-title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  margin: 10px;
+  display: flex;              /* Ativa o Flexbox */
+  flex-direction: column;     /* Organiza os elementos em coluna */
+  align-items: center;        /* Centraliza horizontalmente */
+  gap: 15px;                  /* Espaço entre o título e o texto */
+  margin-bottom: 50px;        /* Distância até os cards */
+  text-align: center;         /* Centraliza o texto */
 }
 
-.container p {
-  color: gray;
-  font-size: 14px;
+/* Título da seção */
+.container-title h2 {
+  font-size: 40px;            /* Tamanho da fonte */
+  color: #102542;             /* Azul escuro */
 }
 
-.areas-grid{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  gap: 10px;
-  flex-wrap: wrap;
+/* Subtítulo */
+.container-title p {
+  font-size: 18px;            /* Tamanho do texto */
+  color: #6b7280;             /* Cinza */
 }
 
+/* Grid dos cards */
+.areas-grid {
+  display: flex;              /* Ativa o Flexbox */
+  flex-wrap: wrap;            /* Permite quebrar linha */
+  justify-content: center;    /* Centraliza os cards */
+  gap: 25px;                  /* Espaço entre eles */
+}
+
+/* Card individual */
 .area-card {
-  display: flex;
-  flex-direction: row;
+  flex: 1 1 260px;            /* Largura mínima de 260px e adapta automaticamente */
+  max-width: 270px;           /* Largura máxima */
+
+  height: 90px;               /* Altura do card */
+
+  display: flex;              /* Centraliza o texto */
   justify-content: center;
   align-items: center;
-  width: 45%; /*ocupar x% da tela */
-  height: 80px;
-  border-radius: 5px;
-  font-size: 14px; /*define tamanho do texto */
-  border: 1px solid #dbeafe;
-  background: linear-gradient(135deg, #f0f6ff, #faf5ff);
+
+  border: 1px solid #dbeafe;  /* Borda azul clara */
+  border-radius: 12px;        /* Cantos arredondados */
+
+  background: linear-gradient(
+    135deg,
+    #f0f6ff,
+    #faf5ff
+  );                          /* Fundo em degradê suave */
+
+  font-size: 18px;            /* Tamanho do texto */
+  font-weight: 600;           /* Texto em seminegrito */
+  color: #102542;             /* Cor do texto */
+
+  cursor: default;            /* Cursor padrão */
 }
+
+/* Quando passar o mouse */
+/* Se não quiser efeito nenhum, pode apagar esse bloco */
