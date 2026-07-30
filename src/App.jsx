@@ -4,7 +4,7 @@ import Hero from "./components/Hero/Hero"
 import About from "./components/About/About"
 import Services from "./components/Services/Services"
 import Areas from "./components/Areas/Areas"
-import Contact from "./components/Contact/Contac"
+import Contact from "./components/Contact/Contact"
 
 function App() {
   

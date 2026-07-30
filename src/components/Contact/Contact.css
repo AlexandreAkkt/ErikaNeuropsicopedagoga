@@ -1,0 +1,71 @@
+/* Seção de contato */
+#contact {
+  padding: 80px 20px; /* Espaçamento em cima/baixo e nas laterais */
+  background-color: #f8fbff; /* Cor de fundo da seção */
+}
+
+/* Container principal */
+#contact .container {
+  max-width: 1200px; /* Largura máxima da página */
+  margin: 0 auto; /* Centraliza o conteúdo */
+}
+
+/* Área do título */
+.contact-title {
+  text-align: center; /* Centraliza o texto */
+  margin-bottom: 60px; /* Espaço entre o título e os cards */
+}
+
+/* Título */
+.contact-title h2 {
+  font-size: 40px; /* Tamanho da fonte */
+  color: #102542; /* Cor do título */
+  margin-bottom: 15px; /* Espaço abaixo do título */
+}
+
+/* Texto abaixo do título */
+.contact-title p {
+  font-size: 18px; /* Tamanho da fonte */
+  color: #6b7280; /* Cor cinza */
+}
+
+/* Onde ficam todos os cards */
+.contact-content {
+  display: flex; /* Ativa o Flexbox */
+  justify-content: center; /* Centraliza os cards */
+  flex-wrap: wrap; /* Quebra a linha quando necessário */
+  gap: 30px; /* Espaço entre os cards */
+}
+
+/* Card individual */
+.contact-card {
+  width: 320px; /* Largura do card */
+  padding: 30px; /* Espaço interno */
+
+  background-color: #ffffff; /* Fundo branco */
+
+  border: 1px solid #dbeafe; /* Borda azul bem clara */
+  border-radius: 12px; /* Deixa os cantos arredondados */
+
+  text-align: center; /* Centraliza o conteúdo */
+}
+
+/* Título do card */
+.contact-card h3 {
+  color: #102542; /* Cor do texto */
+  margin-bottom: 15px; /* Espaço abaixo do título */
+  font-size: 22px; /* Tamanho da fonte */
+}
+
+/* Link (WhatsApp, E-mail e Instagram) */
+.contact-card a {
+  color: #2563eb; /* Cor azul */
+  text-decoration: none; /* Remove o sublinhado */
+  font-size: 18px; /* Tamanho da fonte */
+  font-weight: 500; /* Deixa um pouco mais forte */
+}
+
+/* Quando passar o mouse no link */
+.contact-card a:hover {
+  text-decoration: underline; /* Apenas adiciona o sublinhado */
+}
