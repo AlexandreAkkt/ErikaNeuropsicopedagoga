@@ -17,7 +17,7 @@ function Contact() {
         <div className="contact-content">
 
           <div className="contact-card">
-            <h3>📱 WhatsApp</h3>
+            <h3> WhatsApp</h3>
             <a
               href="https://wa.me/5511950501988"
               target="_blank"
@@ -28,14 +28,14 @@ function Contact() {
           </div>
 
           <div className="contact-card">
-            <h3>📧 E-mail</h3>
+            <h3> E-mail</h3>
             <a href="mailto:erikasantanaanjos@gmail.com">
               erikasantanaanjos@gmail.com
             </a>
           </div>
 
           <div className="contact-card">
-            <h3>📸 Instagram</h3>
+            <h3>Instagram</h3>
             <a
               href="https://www.instagram.com/erikaanjos.neuropp"
               target="_blank"
