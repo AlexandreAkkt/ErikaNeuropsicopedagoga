@@ -28,7 +28,7 @@ function Header(){
       </ul>
 
 
-<button> Agenda Consulta</button>
+<button> Agendar Consulta</button>
     </nav>);
 }
 export default Header;

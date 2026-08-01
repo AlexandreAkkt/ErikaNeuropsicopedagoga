@@ -1,5 +1,5 @@
 import "./Hero.css";
-import erika from "../../assets/erika.png";
+import erika from "../../assets/logo.png";
 
 function Hero() {
   return (
@@ -10,8 +10,8 @@ function Hero() {
         </span>
 
         <h1>
-          Neuropsicopedagogia com <br />
-          afeto e ciência
+          Neuropsicopedagogia com  afeto e ciência. <br />
+          
         </h1>
 
         <p>
