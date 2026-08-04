@@ -17,7 +17,7 @@ function Services() {
 
         <div className="services-grid">
           <div className="service-card">
-            <div className="service-icon">🧠</div>
+            <div className="service-icon"></div>
 
             <h3>Avaliação Neuropsicopedagógica</h3>
 
@@ -28,8 +28,6 @@ function Services() {
           </div>
 
           <div className="service-card">
-            <div className="service-icon">📚</div>
-
             <h3>Intervenção Neuropsicopedagógica</h3>
 
             <p>
@@ -39,8 +37,6 @@ function Services() {
           </div>
 
           <div className="service-card">
-            <div className="service-icon">👨‍👩‍👧</div>
-
             <h3>Orientação Familiar</h3>
 
             <p>
@@ -50,8 +46,6 @@ function Services() {
           </div>
 
           <div className="service-card">
-            <div className="service-icon">🎓</div>
-
             <h3>Assessoria Escolar</h3>
 
             <p>
@@ -61,8 +55,6 @@ function Services() {
           </div>
 
           <div className="service-card">
-            <div className="service-icon">💙</div>
-
             <h3>Atendimento para TDAH e TEA</h3>
 
             <p>
@@ -72,8 +64,6 @@ function Services() {
           </div>
 
           <div className="service-card">
-            <div className="service-icon">✨</div>
-
             <h3>Estimulação Cognitiva</h3>
 
             <p>

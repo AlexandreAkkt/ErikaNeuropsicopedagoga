@@ -1,0 +1,46 @@
+/* Centraliza o texto do cabeçalho */
+.services-header {
+  text-align: center;
+  margin-bottom: 60px; /* Adiciona espaço abaixo do cabeçalho */
+}
+
+.services-header .section-subtitle {
+  display: inline-block; /* Faz o elemento ocupar apenas o espaço do conteúdo e permite definir padding */
+  background-color: #dceaff; /* Define a cor de fundo */
+  color: #1757d5; /* Define a cor do texto */
+  padding: 9px 18px; /* Adiciona espaçamento interno */
+  border-radius: 30px; /* Arredonda as bordas */
+  font-size: 14px; /* Define o tamanho da fonte */
+  font-weight: 600; /* Deixa a fonte mais espessa */
+  margin-bottom: 18px; /* Adiciona espaço abaixo do subtítulo */
+}
+
+.services-grid {
+  display: grid; /* Organiza os elementos em formato de grade */
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ); /* Cria 3 colunas com o mesmo tamanho */
+  gap: 32px; /* Define o espaço entre os cards */
+}
+
+.service-card {
+  min-height: 200px; /* Define uma altura mínima para todos os cards */
+  background-color: #ffffff; /* Cor de fundo do card */
+  border: 1px solid #dbeafe; /* Adiciona uma borda */
+  border-radius: 16px; /* Arredonda as bordas */
+  padding: 32px; /* Adiciona espaçamento interno */
+  box-shadow: 0 8px 20px rgba(15, 31, 61, 0.08); /* Cria uma sombra suave */
+}
+
+.service-icon {
+  width: 64px; /* Define a largura */
+  height: 64px; /* Define a altura */
+  display: flex; /* Ativa o Flexbox */
+  align-items: center; /* Centraliza o conteúdo na vertical */
+  justify-content: center; /* Centraliza o conteúdo na horizontal */
+  background-color: #e6e7ff; /* Define a cor de fundo */
+  border-radius: 14px; /* Arredonda as bordas */
+  font-size: 30px; /* Define o tamanho do ícone */
+  margin-bottom: 26px; /* Adiciona espaço abaixo do ícone */
+}
