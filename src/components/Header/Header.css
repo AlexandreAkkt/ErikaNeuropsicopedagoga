@@ -1,7 +1,7 @@
 /* Header.css */
 nav {
   display: flex; /* exibe os itens da lista em linha */
-  align-items: center; /* centraliza verticalmente os elementos dentro no container */
+  align-items: center; /* centraliza verticalmente os elementos dentro do container */
   justify-content: space-between; /* distribui os elementos com espaço entre eles */
   max-width: 1200px; /* define a largura máxima do container */
   margin: 0 auto; /* centraliza o container horizontalmente */
@@ -19,18 +19,35 @@ nav ul {
   gap: 20px; /* adiciona espaçamento entre os itens da lista */
   margin: 0; /* remove a margem padrão da lista */
   padding: 0; /* remove o preenchimento padrão da lista */
+  list-style: none; /* remove os marcadores da lista */
 }
 
-/* Estiliza os itens da lista com pseudo-elemento */
-nav ul li:hover {
-  color: #2b7a78;
+nav ul li a {
+  text-decoration: none; /* remove o sublinhado dos links */
+  color: #111827; /* define a cor do texto */
+  font-size: 17px; /* define o tamanho da fonte */
+  font-weight: 500; /* define a espessura da fonte */
+  transition: 0.3s ease; /* adiciona uma animação suave */
+}
+
+/* Altera a cor do link ao passar o mouse */
+nav ul li a:hover {
+  color: #0B3E6D;
 }
 
 nav button {
-  background-color: #18B6B4; /* define a cor de fundo do botão */
+  background-color: #0B3E6D; /* define a cor de fundo do botão */
   color: white; /* define a cor do texto do botão */
-  border: none; /* remove a borda do botão */
+  border: 1px solid #0B3E6D; /* adiciona uma borda na mesma cor do botão */
   padding: 10px 20px; /* adiciona espaçamento interno ao botão */
   cursor: pointer; /* muda o cursor para indicar que é clicável */
   font-weight: bold; /* define a espessura da fonte do botão */
+  border-radius: 4px; /* arredonda levemente os cantos do botão */
+  transition: 0.3s ease; /* adiciona uma animação suave */
+}
+
+/* Escurece o botão ao passar o mouse */
+nav button:hover {
+  background-color: #082F54;
+  border-color: #082F54;
 }

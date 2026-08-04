@@ -1,5 +1,5 @@
 import "./Hero.css";
-import erika from "../../assets/logo.png";
+import erika from "../../assets/logoNovo.png";
 
 function Hero() {
   return (
