@@ -1,34 +1,40 @@
 import "./Header.css";
-import logo from "../../assets/mineLogo.png"
+import logo from "../../assets/mineLogo.png";
 
-function Header(){
-    return(
-    <nav> 
+function Header() {
+  return (
+    <nav>
       <div>
-        <img src={logo} alt="logo" /> 
-        </div>  
-        
-        <ul>
-        {/* li = list item */}
-        <a href="#sobre">
-          <li>Sobre</li>
-        </a>
-        <a href="#servicos">
-          <li>Serviços</li>
-        </a>
-        <a href="#areas-de-atuacao">
-          <li>Áreas de atuação</li>
-        </a>
-        <a href="#depoimentos">
-          <li>Depoimentos</li>
-        </a>
-        <a href="#contato">
-          <li>Contato</li>
-        </a>
+        <img src={logo} alt="Logo" />
+      </div>
+
+      <ul>
+        <li>
+          <a href="#about">Sobre</a>
+        </li>
+
+        <li>
+          <a href="#services">Serviços</a>
+        </li>
+
+        <li>
+          <a href="#areas">Áreas de atuação</a>
+        </li>
+
+        <li>
+          <a href="#depoimentos">Depoimentos</a>
+        </li>
+
+        <li>
+          <a href="#contact">Contato</a>
+        </li>
       </ul>
 
-
-<button> Agendar Consulta</button>
-    </nav>);
+      <a href="#contato">
+        <button>Agendar Consulta</button>
+      </a>
+    </nav>
+  );
 }
+
 export default Header;
