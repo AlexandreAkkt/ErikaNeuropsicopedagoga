@@ -22,10 +22,6 @@ function Header() {
         </li>
 
         <li>
-          <a href="#depoimentos">Depoimentos</a>
-        </li>
-
-        <li>
           <a href="#contact">Contato</a>
         </li>
       </ul>

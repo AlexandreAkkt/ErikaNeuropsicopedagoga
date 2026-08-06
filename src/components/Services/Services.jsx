@@ -5,8 +5,6 @@ function Services() {
     <section id="services">
       <div className="container">
         <div className="services-header">
-          <span className="section-subtitle">Serviços</span>
-
           <h2>Serviços Oferecidos</h2>
 
           <p>
@@ -28,6 +26,7 @@ function Services() {
           </div>
 
           <div className="service-card">
+            <div className="service-icon"></div>
             <h3>Intervenção Neuropsicopedagógica</h3>
 
             <p>
@@ -37,6 +36,7 @@ function Services() {
           </div>
 
           <div className="service-card">
+            <div className="service-icon"></div>
             <h3>Orientação Familiar</h3>
 
             <p>
@@ -46,6 +46,7 @@ function Services() {
           </div>
 
           <div className="service-card">
+            <div className="service-icon"></div>
             <h3>Assessoria Escolar</h3>
 
             <p>
@@ -55,6 +56,7 @@ function Services() {
           </div>
 
           <div className="service-card">
+            <div className="service-icon"></div>
             <h3>Atendimento para TDAH e TEA</h3>
 
             <p>
@@ -64,6 +66,7 @@ function Services() {
           </div>
 
           <div className="service-card">
+            <div className="service-icon"></div>
             <h3>Estimulação Cognitiva</h3>
 
             <p>

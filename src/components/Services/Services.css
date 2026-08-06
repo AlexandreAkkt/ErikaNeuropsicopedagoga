@@ -17,10 +17,7 @@
 
 .services-grid {
   display: flex;
-  grid-template-columns: repeat(
-    3,
-    1fr
-  ); /* Cria 3 colunas com o mesmo tamanho */
+
   gap: 32px; /* Define o espaço entre os cards */
 }
 
