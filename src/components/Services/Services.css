@@ -16,18 +16,19 @@
 }
 
 .services-grid {
-  display: flex;
-
-  gap: 32px; /* Define o espaço entre os cards */
+  display: flex; /* Coloca os cards lado a lado */
+  flex-wrap: wrap; /* Permite quebrar para a próxima linha */
+  justify-content: center; /* Centraliza os cards */
+  gap: 30px; /* Espaço entre os cards */
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .service-card {
-  min-height: 200px; /* Define uma altura mínima para todos os cards */
-  background-color: #ffffff; /* Cor de fundo do card */
-  border: 1px solid #dbeafe; /* Adiciona uma borda */
-  border-radius: 16px; /* Arredonda as bordas */
-  padding: 32px; /* Adiciona espaçamento interno */
-  box-shadow: 0 8px 20px rgba(15, 31, 61, 0.08); /* Cria uma sombra suave */
+  width: calc(33.333% - 20px); /* Faz caber 3 cards por linha */
+  min-height: 320px;
+  padding: 32px;
+  box-sizing: border-box;
 }
 
 .service-icon {
