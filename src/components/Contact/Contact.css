@@ -10,19 +10,6 @@
   margin: 0 auto; /* Centraliza o conteúdo */
 }
 
-/* Área do título */
-.contact-title {
-  text-align: center; /* Centraliza o texto */
-  margin-bottom: 60px; /* Espaço entre o título e os cards */
-}
-
-/* Título */
-.contact-title h2 {
-  font-size: 40px; /* Tamanho da fonte */
-  color: #102542; /* Cor do título */
-  margin-bottom: 15px; /* Espaço abaixo do título */
-}
-
 /* Texto abaixo do título */
 .contact-title p {
   font-size: 18px; /* Tamanho da fonte */

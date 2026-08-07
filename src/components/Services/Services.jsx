@@ -1,16 +1,15 @@
 import "./Services.css";
+import Title from "../Text/Title";
 
 function Services() {
   return (
     <section id="services">
       <div className="container">
         <div className="services-header">
-          <h2>Serviços Oferecidos</h2>
-
-          <p>
-            Atendimento neuropsicopedagógico personalizado para crianças,
-            adolescentes e suas famílias.
-          </p>
+          <Title
+            title="Serviços"
+            description="Atendimento neuropsicopedagógico personalizado para crianças, adolescentes e suas famílias."
+          />
         </div>
 
         <div className="services-grid">

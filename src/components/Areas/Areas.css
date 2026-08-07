@@ -1,66 +1,24 @@
 /* Container principal da seção */
 .container {
-  max-width: 1200px;          /* Largura máxima da seção */
-  margin: 0 auto;             /* Centraliza na tela */
-  padding: 80px 20px;         /* Espaçamento interno */
+  max-width: 1200px; /* Largura máxima da seção */
+  margin: 0 auto; /* Centraliza na tela */
+  padding: 80px 20px; /* Espaçamento interno */
 }
 
 /* Container do título e subtítulo */
 .container-title {
-  display: flex;              /* Ativa o Flexbox */
-  flex-direction: column;     /* Organiza os elementos em coluna */
-  align-items: center;        /* Centraliza horizontalmente */
-  gap: 15px;                  /* Espaço entre o título e o texto */
-  margin-bottom: 50px;        /* Distância até os cards */
-  text-align: center;         /* Centraliza o texto */
-}
-
-/* Título da seção */
-.container-title h2 {
-  font-size: 40px;            /* Tamanho da fonte */
-  color: #102542;             /* Azul escuro */
-}
-
-/* Subtítulo */
-.container-title p {
-  font-size: 18px;            /* Tamanho do texto */
-  color: #6b7280;             /* Cinza */
+  display: flex; /* Ativa o Flexbox */
+  flex-direction: column; /* Organiza os elementos em coluna */
+  align-items: center; /* Centraliza horizontalmente */
+  gap: 15px; /* Espaço entre o título e o texto */
+  margin-bottom: 50px; /* Distância até os cards */
+  text-align: center; /* Centraliza o texto */
 }
 
 /* Grid dos cards */
 .areas-grid {
-  display: flex;              /* Ativa o Flexbox */
-  flex-wrap: wrap;            /* Permite quebrar linha */
-  justify-content: center;    /* Centraliza os cards */
-  gap: 25px;                  /* Espaço entre eles */
+  display: flex; /* Ativa o Flexbox */
+  flex-wrap: wrap; /* Permite quebrar linha */
+  justify-content: center; /* Centraliza os cards */
+  gap: 25px; /* Espaço entre eles */
 }
-
-/* Card individual */
-.area-card {
-  flex: 1 1 260px;            /* Largura mínima de 260px e adapta automaticamente */
-  max-width: 270px;           /* Largura máxima */
-
-  height: 90px;               /* Altura do card */
-
-  display: flex;              /* Centraliza o texto */
-  justify-content: center;
-  align-items: center;
-
-  border: 1px solid #dbeafe;  /* Borda azul clara */
-  border-radius: 12px;        /* Cantos arredondados */
-
-  background: linear-gradient(
-    135deg,
-    #f0f6ff,
-    #faf5ff
-  );                          /* Fundo em degradê suave */
-
-  font-size: 18px;            /* Tamanho do texto */
-  font-weight: 600;           /* Texto em seminegrito */
-  color: #102542;             /* Cor do texto */
-
-  cursor: default;            /* Cursor padrão */
-}
-
-/* Quando passar o mouse */
-/* Se não quiser efeito nenhum, pode apagar esse bloco */

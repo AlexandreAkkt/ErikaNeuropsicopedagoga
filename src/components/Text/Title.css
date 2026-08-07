@@ -1,0 +1,21 @@
+.title-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+  margin-bottom: 50px; /*margem inferior para separar do conteúdo abaixo*/
+  margen-top: 50px; /*margem superior para separar do conteúdo acima*/
+}
+
+/* Subtítulo */
+.title-card p {
+  font-size: 18px; /* Tamanho do texto */
+  color: #6b7280; /* Cinza */
+}
+
+/* Título da seção */
+.title-card h2 {
+  font-size: 40px; /* Tamanho da fonte */
+  color: #102542; /* Azul escuro */
+}

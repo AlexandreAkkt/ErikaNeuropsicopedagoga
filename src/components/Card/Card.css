@@ -1,0 +1,33 @@
+/* Card individual */
+.area-card {
+  flex: 1 1 260px; /* Largura mínima de 260px e adapta automaticamente */
+  max-width: 270px; /* Largura máxima */
+
+  height: 90px; /* Altura do card */
+
+  display: flex; /* Centraliza o texto */
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid #dbeafe; /* Borda azul clara */
+  border-radius: 12px; /* Cantos arredondados */
+
+  background: linear-gradient(
+    135deg,
+    #f0f6ff,
+    #faf5ff
+  ); /* Fundo em degradê suave */
+
+  font-size: 18px; /* Tamanho do texto */
+  font-weight: 600; /* Texto em seminegrito */
+  color: #102542; /* Cor do texto */
+
+  cursor: default; /* Cursor padrão */
+}
+
+h3 {
+  text-align: center; /* Centraliza o texto */
+}
+
+/* Quando passar o mouse */
+/* Se não quiser efeito nenhum, pode apagar esse bloco */

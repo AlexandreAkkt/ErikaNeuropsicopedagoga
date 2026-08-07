@@ -1,21 +1,18 @@
+import Title from "../Text/Title";
 import "./Contact.css";
 
 function Contact() {
   return (
     <section id="contact">
       <div className="container">
-
         <div className="contact-title">
-          <h2>Entre em Contato</h2>
-
-          <p>
-            Será um prazer conversar com você e esclarecer suas dúvidas.
-            Entre em contato pelos canais abaixo.
-          </p>
+          <Title
+            title="Contato"
+            description="Entre em contato para agendar uma consulta ou obter mais informações."
+          />
         </div>
 
         <div className="contact-content">
-
           <div className="contact-card">
             <h3> WhatsApp</h3>
             <a
@@ -44,9 +41,7 @@ function Contact() {
               @erikaanjos.neuropp
             </a>
           </div>
-
         </div>
-
       </div>
     </section>
   );
