@@ -74,7 +74,7 @@
 
 /* Título de cada item */
 .about-content ul li strong {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   color: #102542;
 }
@@ -82,7 +82,7 @@
 /* Descrição de cada item */
 .about-content ul li p {
   margin: 0;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1.5;
   color: #6b7280;
 }
