@@ -1,11 +1,12 @@
 /* Centraliza o texto do cabeçalho */
 .services-header {
+  display: flex;
   text-align: center;
   margin-bottom: 60px; /* Adiciona espaço abaixo do cabeçalho */
 }
 
 .services-header .section-subtitle {
-  display: inline-block; /* Faz o elemento ocupar apenas o espaço do conteúdo e permite definir padding */
+  display: flex; /* Faz o elemento ocupar apenas o espaço do conteúdo e permite definir padding */
   background-color: #dceaff; /* Define a cor de fundo */
   color: #1757d5; /* Define a cor do texto */
   padding: 9px 18px; /* Adiciona espaçamento interno */
@@ -15,7 +16,7 @@
   margin-bottom: 18px; /* Adiciona espaço abaixo do subtítulo */
 }
 
-.services-grid {
+.services-container {
   display: flex; /* Coloca os cards lado a lado */
   flex-wrap: wrap; /* Permite quebrar para a próxima linha */
   justify-content: center; /* Centraliza os cards */
@@ -24,8 +25,8 @@
   margin: 0 auto;
 }
 
-.service-card {
-  width: calc(33.333% - 20px); /* Faz caber 3 cards por linha */
+.service {
+  width: calc(33.333% - 20px);
   min-height: 320px;
   padding: 32px;
   box-sizing: border-box;
