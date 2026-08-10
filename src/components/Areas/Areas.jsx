@@ -5,10 +5,12 @@ import Card from "../Card/Card";
 let areas = [
   "Dislexia",
   "Discalculia",
-  "TEA",
-  "Autismo",
+  "Digrafia",
+  "TEA (Autismo)",
   "TDAH",
-  "Transtornos de Aprendizagem",
+  "Transtornos de Linguagem",
+  "Dificuldade de Aprendizagem",
+  "Deficiência intelectual"
 ];
 function Areas() {
   return (

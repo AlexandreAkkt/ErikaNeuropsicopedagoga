@@ -20,15 +20,11 @@ function Hero() {
           integrativa e humanizada.
         </p>
 
-        <div className="hero-buttons">
-          <button className="button-primary">
-            Agendar Avaliação
-          </button>
 
           <button className="button-secondary">
             Saiba Mais
           </button>
-        </div>
+        
       </div>
 
       <div className="hero-image">

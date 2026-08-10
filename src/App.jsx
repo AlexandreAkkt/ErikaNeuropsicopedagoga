@@ -16,6 +16,7 @@ function App() {
       <Areas /> {/* areas de atendimento: Autismo, TDH e ETc */}
       <Contact />
       <Footer />
+      
     </>
   );
 }

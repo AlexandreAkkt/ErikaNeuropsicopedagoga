@@ -29,8 +29,8 @@
 
 .about-tag {
   display: inline-block;
-  background-color: #EAF9F9;
-  color: #18B6B4;
+  background-color: #dceaff;
+  color: #0b3e6d;
   padding: 10px 20px;
   border-radius: 30px;
   font-size: 14px;
@@ -39,26 +39,50 @@
 }
 
 .about-content h2 {
-  font-size: 42px;
-  color: #111827;
+  font-size: 30px;
+  color: #102542;
   line-height: 1.2;
   margin-bottom: 25px;
 }
 
-.about-content p {
+.about-content > p {
   font-size: 18px;
-  color: #475569;
+  color: #6b7280;
   line-height: 1.8;
   margin-bottom: 35px;
 }
 
+/* Lista de informações */
 .about-content ul {
   list-style: none;
   padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
+/* Cada item da lista */
 .about-content ul li {
-  font-size: 18px;
-  color: #111827;
-  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  color: #6b7280;
+}
+
+/* Título de cada item */
+.about-content ul li strong {
+  font-size: 16px;
+  font-weight: 600;
+  color: #102542;
+}
+
+/* Descrição de cada item */
+.about-content ul li p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #6b7280;
 }

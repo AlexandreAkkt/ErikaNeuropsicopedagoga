@@ -13,7 +13,7 @@ function About() {
         <div className="about-content">
 
           <span className="about-tag">
-            Sobre
+            Erika S. de Oliveira dos Anjos
           </span>
 
           <h2>
@@ -26,12 +26,27 @@ function About() {
             emocional e escolar.
           </p>
 
-          <ul>
-            <li>✔ Atendimento individualizado</li>
-            <li>✔ Avaliação Neuropsicopedagógica</li>
-            <li>✔ Intervenção nas dificuldades de aprendizagem</li>
-            <li>✔ Orientação para famílias</li>
-          </ul>
+          <ul className="about-list">
+  <li>
+    <strong>Formação Especializada</strong>
+    <p>Pós-graduação em Neuropsicopedagogia e Neurociências</p>
+  </li>
+
+  <li>
+    <strong>Atendimento Humanizado</strong>
+    <p>Abordagem acolhedora e individualizada para cada paciente</p>
+  </li>
+
+  <li>
+    <strong>Metodologia Baseada em Evidências</strong>
+    <p>Práticas fundamentadas em pesquisas científicas atuais</p>
+  </li>
+
+  <li>
+    <strong>Orientação para Famílias</strong>
+    <p>Orientação e suporte para as famílias durante o processo.</p>
+  </li>
+</ul>
 
         </div>
 
