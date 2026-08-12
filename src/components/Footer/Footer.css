@@ -1,22 +1,36 @@
+/* Estilo principal do rodapé */
 .footer {
-  background: #121b2d;
-  color: white;
-  text-align: center;
-  padding: 60px 20px;
-  display: flex;
+  background: #121b2d; /* Cor de fundo azul escuro */
+  color: white; /* Cor padrão dos textos */
+
+  padding: 30px 3%; /* Espaçamento interno */
+
+  display: flex; /* Organiza os elementos */
+  flex-direction: column; /* Coloca os elementos um abaixo do outro */
+
+  align-items: center; /* Centraliza os elementos horizontalmente */
+
+  text-align: center; /* Centraliza o texto */
+
+  gap: 18px; /* Espaço entre os elementos */
 }
 
+/* Nome da marca */
 .footer h2 {
-  font-size: 34px;
-  margin-bottom: 20px;
+  font-size: 28px; /* Tamanho do nome */
+  margin: 0; /* Remove a margem padrão */
 }
 
+/* Descrição do rodapé */
 .footer p {
-  color: #c7c7c7;
-  margin-bottom: 30px;
+  color: #aeb7c8; /* Cor cinza azulada */
+  font-size: 16px; /* Tamanho do texto */
+  margin: 0; /* Remove a margem padrão */
 }
 
+/* Direitos autorais */
 .footer span {
-  color: #8f97a8;
-  font-size: 14px;
+  color: #707b8f; /* Cor cinza */
+  font-size: 14px; /* Tamanho do texto */
+  margin: 10px 0 0; /* Espaço acima */
 }
