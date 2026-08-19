@@ -51,7 +51,7 @@ nav button:hover {
   background-color: #082F54;
   border-color: #082F54;
 }
-/* Responsividade para telas menores */
+
 @media (max-width: 768px) {
   nav {
     padding: 15px;
