@@ -86,3 +86,23 @@
   line-height: 1.5;
   color: #6b7280;
 }
+
+
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image {
+    width: 100%;
+  }
+
+  .about-content {
+    width: 100%;
+  }
+
+  .about-list {
+    text-align: left;
+  }
+}
