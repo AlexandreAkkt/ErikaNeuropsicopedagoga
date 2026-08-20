@@ -43,3 +43,17 @@
   font-size: 30px; /* Define o tamanho do ícone */
   margin-bottom: 26px; /* Adiciona espaço abaixo do ícone */
 }
+
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .services-header {
+    margin-bottom: 35px;
+  }
+
+  .service {
+    width: 100%;
+    min-height: auto;
+    padding: 25px;
+  }
+}

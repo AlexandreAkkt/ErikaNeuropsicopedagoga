@@ -22,3 +22,19 @@
   justify-content: center; /* Centraliza os cards */
   gap: 25px; /* Espaço entre eles */
 }
+
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .container {
+    padding: 50px 20px;
+  }
+
+  .container-title {
+    margin-bottom: 30px;
+  }
+
+  .areas-grid {
+    gap: 15px;
+  }
+}

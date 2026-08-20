@@ -56,3 +56,21 @@
 .contact-card a:hover {
   text-decoration: underline; /* Apenas adiciona o sublinhado */
 }
+
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  #contact {
+    padding: 50px 20px;
+  }
+
+  .contact-card {
+    width: 100%;
+    max-width: 320px;
+    padding: 25px;
+  }
+
+  .contact-title p {
+    font-size: 16px;
+  }
+}

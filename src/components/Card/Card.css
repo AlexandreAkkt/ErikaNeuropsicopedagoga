@@ -31,3 +31,13 @@ h3 {
 
 /* Quando passar o mouse */
 /* Se não quiser efeito nenhum, pode apagar esse bloco */
+
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .area-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+    font-size: 16px;
+  }
+}

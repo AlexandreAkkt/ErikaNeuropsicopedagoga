@@ -25,7 +25,6 @@ function Header() {
       const targetPosition = sectionPosition - headerHeight;
 
       // Define a duração da animação
-      // 1200 = 1,2 segundos
       const duration = 1200;
 
       // Registra o momento em que a animação começa
@@ -33,31 +32,24 @@ function Header() {
 
       // Função responsável pela animação da rolagem
       const animation = (currentTime) => {
-        // Calcula o tempo que já passou
         const elapsed = currentTime - startTime;
-
-        // Calcula o progresso da animação
         const progress = Math.min(elapsed / duration, 1);
 
-        // Deixa o movimento mais suave no início e no final
         const ease =
           progress < 0.5
             ? 2 * progress * progress
             : 1 - Math.pow(-2 * progress + 2, 2) / 2;
 
-        // Move a página gradualmente até a seção
         window.scrollTo(
           0,
           startPosition + (targetPosition - startPosition) * ease
         );
 
-        // Continua a animação até chegar ao destino
         if (progress < 1) {
           requestAnimationFrame(animation);
         }
       };
 
-      // Inicia a animação
       requestAnimationFrame(animation);
     }
   };
@@ -106,12 +98,7 @@ function Header() {
         </li>
       </ul>
 
-      <a
-        href="#contact"
-        onClick={(event) => handleScroll(event, "contact")}
-      >
-        <button>Agendar Consulta</button>
-      </a>
+      <button>Agendar Consulta</button>
     </nav>
   );
 }
