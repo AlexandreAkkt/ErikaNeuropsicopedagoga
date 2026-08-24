@@ -1,72 +1,79 @@
-/* Header.css */
-nav {
-  display: flex; /* exibe os itens da lista em linha */
-  align-items: center; /* centraliza verticalmente os elementos dentro do container */
-  justify-content: space-between; /* distribui os elementos com espaço entre eles */
-  max-width: 1200px; /* define a largura máxima do container */
-  margin: 0 auto; /* centraliza o container horizontalmente */
-  padding: 20px; /* adiciona espaçamento interno ao container */
+/* Botão hambúrguer escondido no computador */
+.menu-toggle {
+  display: none;
 }
 
-nav img {
-  width: 80px; /* define a largura da imagem */
-  height: auto; /* mantém a proporção da imagem */
-  display: block; /* remove o espaço em branco abaixo da imagem */
+/* Botão de agendamento */
+.schedule-button {
+  background-color: #0b3e6d;
+  color: white;
+  border: 1px solid #0b3e6d;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: 0.3s ease;
 }
 
-nav ul {
-  display: flex; /* exibe os itens da lista em linha */
-  gap: 20px; /* adiciona espaçamento entre os itens da lista */
-  margin: 0; /* remove a margem padrão da lista */
-  padding: 0; /* remove o preenchimento padrão da lista */
-  list-style: none; /* remove os marcadores da lista */
-}
-
-nav ul li a {
-  text-decoration: none; /* remove o sublinhado dos links */
-  color: #111827; /* define a cor do texto */
-  font-size: 17px; /* define o tamanho da fonte */
-  font-weight: 500; /* define a espessura da fonte */
-  transition: 0.3s ease; /* adiciona uma animação suave */
-}
-
-/* Altera a cor do link ao passar o mouse */
-nav ul li a:hover {
-  color: #0B3E6D;
-}
-
-nav button {
-  background-color: #0B3E6D; /* define a cor de fundo do botão */
-  color: white; /* define a cor do texto do botão */
-  border: 1px solid #0B3E6D; /* adiciona uma borda na mesma cor do botão */
-  padding: 10px 20px; /* adiciona espaçamento interno ao botão */
-  cursor: pointer; /* muda o cursor para indicar que é clicável */
-  font-weight: bold; /* define a espessura da fonte do botão */
-  border-radius: 4px; /* arredonda levemente os cantos do botão */
-  transition: 0.3s ease; /* adiciona uma animação suave */
-}
-
-/* Escurece o botão ao passar o mouse */
-nav button:hover {
-  background-color: #082F54;
-  border-color: #082F54;
+.schedule-button:hover {
+  background-color: #082f54;
+  border-color: #082f54;
 }
 
 @media (max-width: 768px) {
   nav {
-    padding: 15px;
+    padding: 15px 20px;
+    position: relative;
   }
 
+  nav img {
+    width: 65px;
+  }
+
+  /* Mostra o hambúrguer */
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    color: #0b3e6d;
+    font-size: 30px;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  /* Esconde o menu inicialmente */
   nav ul {
-    gap: 10px;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    gap: 0;
+    background-color: white;
+    padding: 10px 0;
+    margin: 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Mostra o menu quando clicar */
+  nav ul.menu-open {
+    display: flex;
+  }
+
+  nav ul li {
+    width: 100%;
+    text-align: center;
   }
 
   nav ul li a {
-    font-size: 14px;
+    display: block;
+    padding: 12px;
+    font-size: 16px;
   }
 
-  nav button {
-    padding: 8px 12px;
-    font-size: 13px;
+  /* Esconde Agendar Consulta no celular */
+  .schedule-button {
+    display: none;
   }
 }

@@ -1,7 +1,10 @@
+import { useState } from "react";
 import "./Header.css";
 import logo from "../../assets/mineLogo.png";
 
 function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   // Função para controlar a rolagem suave entre as seções
   const handleScroll = (event, id) => {
     // Impede o pulo automático do link
@@ -42,7 +45,7 @@ function Header() {
 
         window.scrollTo(
           0,
-          startPosition + (targetPosition - startPosition) * ease
+          startPosition + (targetPosition - startPosition) * ease,
         );
 
         if (progress < 1) {
@@ -52,6 +55,9 @@ function Header() {
 
       requestAnimationFrame(animation);
     }
+
+    // Fecha o menu depois de clicar em uma opção
+    setMenuOpen(false);
   };
 
   return (
@@ -60,12 +66,20 @@ function Header() {
         <img src={logo} alt="Logo" />
       </div>
 
-      <ul>
+      {/* Botão do menu hambúrguer */}
+      <button
+        className="menu-toggle"
+        onClick={() => setMenuOpen(!menuOpen)}
+        aria-label="Abrir menu"
+        aria-expanded={menuOpen}
+      >
+        ☰
+      </button>
+
+      {/* Menu de navegação */}
+      <ul className={menuOpen ? "menu-open" : ""}>
         <li>
-          <a
-            href="#about"
-            onClick={(event) => handleScroll(event, "about")}
-          >
+          <a href="#about" onClick={(event) => handleScroll(event, "about")}>
             Sobre
           </a>
         </li>
@@ -80,10 +94,7 @@ function Header() {
         </li>
 
         <li>
-          <a
-            href="#areas"
-            onClick={(event) => handleScroll(event, "areas")}
-          >
+          <a href="#areas" onClick={(event) => handleScroll(event, "areas")}>
             Áreas de atuação
           </a>
         </li>
@@ -98,7 +109,8 @@ function Header() {
         </li>
       </ul>
 
-      <button>Agendar Consulta</button>
+      {/* Botão de agendamento */}
+      <button className="schedule-button">Agendar Consulta</button>
     </nav>
   );
 }
