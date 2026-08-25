@@ -1,76 +1,89 @@
 /* Seção de contato */
 #contact {
-  padding: 80px 20px; /* Espaçamento em cima/baixo e nas laterais */
-  background-color: #f8fbff; /* Cor de fundo da seção */
+  padding: 80px 20px;
+  background-color: #f8fbff;
 }
 
 /* Container principal */
 #contact .container {
-  max-width: 1200px; /* Largura máxima da página */
-  margin: 0 auto; /* Centraliza o conteúdo */
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* Texto abaixo do título */
 .contact-title p {
-  font-size: 18px; /* Tamanho da fonte */
-  color: #6b7280; /* Cor cinza */
+  font-size: 18px;
+  color: #6b7280;
 }
 
 /* Onde ficam todos os cards */
 .contact-content {
-  display: flex; /* Ativa o Flexbox */
-  justify-content: center; /* Centraliza os cards */
-  flex-wrap: wrap; /* Quebra a linha quando necessário */
-  gap: 30px; /* Espaço entre os cards */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 /* Card individual */
 .contact-card {
-  width: 320px; /* Largura do card */
-  padding: 30px; /* Espaço interno */
-
-  background-color: #ffffff; /* Fundo branco */
-
-  border: 1px solid #dbeafe; /* Borda azul bem clara */
-  border-radius: 12px; /* Deixa os cantos arredondados */
-
-  text-align: center; /* Centraliza o conteúdo */
+  width: 320px;
+  padding: 30px;
+  background-color: #ffffff;
+  border: 1px solid #dbeafe;
+  border-radius: 12px;
+  text-align: center;
+  box-sizing: border-box;
 }
 
 /* Título do card */
 .contact-card h3 {
-  color: #102542; /* Cor do texto */
-  margin-bottom: 15px; /* Espaço abaixo do título */
-  font-size: 22px; /* Tamanho da fonte */
+  color: #102542;
+  margin-bottom: 15px;
+  font-size: 22px;
 }
 
-/* Link (WhatsApp, E-mail e Instagram) */
+/* Link */
 .contact-card a {
-  color: #2563eb; /* Cor azul */
-  text-decoration: none; /* Remove o sublinhado */
-  font-size: 18px; /* Tamanho da fonte */
-  font-weight: 500; /* Deixa um pouco mais forte */
+  color: #2563eb;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  overflow-wrap: anywhere;
 }
 
 /* Quando passar o mouse no link */
 .contact-card a:hover {
-  text-decoration: underline; /* Apenas adiciona o sublinhado */
+  text-decoration: underline;
 }
 
-
-/* Responsividade para telas menores */
+/* Responsividade */
 @media (max-width: 768px) {
   #contact {
-    padding: 50px 20px;
+    padding: 60px 20px;
+  }
+
+  .contact-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
   }
 
   .contact-card {
     width: 100%;
     max-width: 320px;
-    padding: 25px;
+    padding: 25px 20px;
   }
 
   .contact-title p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .contact-card h3 {
+    font-size: 20px;
+  }
+
+  .contact-card a {
     font-size: 16px;
   }
 }

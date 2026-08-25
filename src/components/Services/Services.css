@@ -2,25 +2,25 @@
 .services-header {
   display: flex;
   text-align: center;
-  margin-bottom: 60px; /* Adiciona espaço abaixo do cabeçalho */
+  margin-bottom: 60px;
 }
 
 .services-header .section-subtitle {
-  display: flex; /* Faz o elemento ocupar apenas o espaço do conteúdo e permite definir padding */
-  background-color: #dceaff; /* Define a cor de fundo */
-  color: #1757d5; /* Define a cor do texto */
-  padding: 9px 18px; /* Adiciona espaçamento interno */
-  border-radius: 30px; /* Arredonda as bordas */
-  font-size: 14px; /* Define o tamanho da fonte */
-  font-weight: 600; /* Deixa a fonte mais espessa */
-  margin-bottom: 18px; /* Adiciona espaço abaixo do subtítulo */
+  display: flex;
+  background-color: #dceaff;
+  color: #1757d5;
+  padding: 9px 18px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 18px;
 }
 
 .services-container {
-  display: flex; /* Coloca os cards lado a lado */
-  flex-wrap: wrap; /* Permite quebrar para a próxima linha */
-  justify-content: center; /* Centraliza os cards */
-  gap: 30px; /* Espaço entre os cards */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -33,27 +33,47 @@
 }
 
 .service-icon {
-  width: 64px; /* Define a largura */
-  height: 64px; /* Define a altura */
-  display: flex; /* Ativa o Flexbox */
-  align-items: center; /* Centraliza o conteúdo na vertical */
-  justify-content: center; /* Centraliza o conteúdo na horizontal */
-  background-color: #e6e7ff; /* Define a cor de fundo */
-  border-radius: 14px; /* Arredonda as bordas */
-  font-size: 30px; /* Define o tamanho do ícone */
-  margin-bottom: 26px; /* Adiciona espaço abaixo do ícone */
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e6e7ff;
+  border-radius: 14px;
+  font-size: 30px;
+  margin-bottom: 26px;
 }
-
 
 /* Responsividade para telas menores */
 @media (max-width: 768px) {
   .services-header {
     margin-bottom: 35px;
+    justify-content: center;
+  }
+
+  .services-header .section-subtitle {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
+
+  .services-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0 20px;
   }
 
   .service {
     width: 100%;
+    max-width: 400px;
     min-height: auto;
     padding: 25px;
+  }
+
+  .service-icon {
+    width: 56px;
+    height: 56px;
+    font-size: 26px;
+    margin-bottom: 20px;
   }
 }

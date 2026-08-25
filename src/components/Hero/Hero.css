@@ -42,7 +42,7 @@
    TÍTULO PRINCIPAL DO HERO
  */
 .hero h1 {
-  color: #102542;;
+  color: #102542;
   font-size: 35px;
   line-height: 1.1;
   margin-bottom: 24px;
@@ -129,21 +129,56 @@
 /* Responsividade para telas menores */
 @media (max-width: 768px) {
   .hero {
+    min-height: auto;
     flex-direction: column;
     text-align: center;
-    padding: 50px 20px;
+    padding: 60px 20px;
     gap: 40px;
   }
 
   .hero-content {
     width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-tag {
+    font-size: 13px;
+    padding: 8px 16px;
+    margin-bottom: 20px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  .hero p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .button-primary,
+  .button-secondary {
+    width: 100%;
+    max-width: 280px;
+    padding: 14px 20px;
+    font-size: 16px;
   }
 
   .hero-image {
     width: 100%;
   }
 
-  .hero-buttons {
-    justify-content: center;
+  .hero-image img {
+    width: 100%;
+    max-width: 350px;
   }
 }

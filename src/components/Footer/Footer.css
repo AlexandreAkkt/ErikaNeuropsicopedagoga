@@ -1,46 +1,46 @@
 /* Estilo principal do rodapé */
 .footer {
-  background: #121b2d; /* Cor de fundo azul escuro */
-  color: white; /* Cor padrão dos textos */
+  background: #121b2d;
+  color: white;
 
-  padding: 30px 3%; /* Espaçamento interno */
+  padding: 30px 3%;
 
-  display: flex; /* Organiza os elementos */
-  flex-direction: column; /* Coloca os elementos um abaixo do outro */
+  display: flex;
+  flex-direction: column;
 
-  align-items: center; /* Centraliza os elementos horizontalmente */
+  align-items: center;
 
-  text-align: center; /* Centraliza o texto */
+  text-align: center;
 
-  gap: 18px; /* Espaço entre os elementos */
+  gap: 18px;
 }
 
 /* Nome da marca */
 .footer h2 {
-  font-size: 28px; /* Tamanho do nome */
-  margin: 0; /* Remove a margem padrão */
+  font-size: 28px;
+  margin: 0;
 }
 
 /* Descrição do rodapé */
 .footer p {
-  color: #aeb7c8; /* Cor cinza azulada */
-  font-size: 16px; /* Tamanho do texto */
-  margin: 0; /* Remove a margem padrão */
+  color: #aeb7c8;
+  font-size: 16px;
+  margin: 0;
+  line-height: 1.6;
 }
 
 /* Direitos autorais */
 .footer span {
-  color: #707b8f; /* Cor cinza */
-  font-size: 14px; /* Tamanho do texto */
-  margin: 10px 0 0; /* Espaço acima */
+  color: #707b8f;
+  font-size: 14px;
+  margin: 10px 0 0;
 }
 
-
-/* Responsividade para telas menores */
+/* Responsividade */
 @media (max-width: 768px) {
   .footer {
-    padding: 25px 20px;
-    gap: 12px;
+    padding: 30px 20px;
+    gap: 14px;
   }
 
   .footer h2 {
@@ -49,9 +49,11 @@
 
   .footer p {
     font-size: 14px;
+    line-height: 1.5;
   }
 
   .footer span {
     font-size: 12px;
+    line-height: 1.5;
   }
 }
