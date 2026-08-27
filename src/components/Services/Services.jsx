@@ -62,7 +62,9 @@ function Services() {
         {/* Orientação Familiar */}
         <div className="service">
           <div className="service-icon">
-            <img src={homemIcon} alt="Ícone de orientação familiar" />
+            <div>
+              <img src={homemIcon} alt="Ícone de orientação familiar" />
+            </div>
           </div>
 
           <h3>Orientação Familiar</h3>

@@ -1,7 +1,16 @@
 /* Centraliza o texto do cabeçalho */
+
+h3 {
+  margin: 10px 10px;
+  text-align: left;
+}
+
+p {
+  line-height: 1.6; /* Ajusta o espaçamento entre as linhas do parágrafo */
+}
+
 .services-header {
   display: flex;
-  text-align: center;
   margin-bottom: 60px;
 }
 
@@ -65,15 +74,22 @@
 
   .service {
     width: 100%;
-    max-width: 400px;
     min-height: auto;
     padding: 25px;
+    text-align: center;
   }
 
   .service-icon {
-    width: 56px;
-    height: 56px;
-    font-size: 26px;
-    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .service-icon img {
+    max-width: none;
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
   }
 }

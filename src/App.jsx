@@ -1,4 +1,3 @@
-import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
@@ -9,14 +8,12 @@ import Contact from "./components/Contact/Contact";
 function App() {
   return (
     <>
-      <Header />
       <Hero />
       <About />
       <Services />
       <Areas /> {/* areas de atendimento: Autismo, TDH e ETc */}
       <Contact />
       <Footer />
-      
     </>
   );
 }

@@ -104,4 +104,8 @@
   .about-list {
     text-align: left;
   }
+
+  .about-list li {
+    text-align: center; /* Centraliza o conteúdo dos itens da lista */
+  }
 }
