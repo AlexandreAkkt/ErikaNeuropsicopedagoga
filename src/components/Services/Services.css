@@ -74,7 +74,7 @@
 
   .services-container {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start; /* Alterado de 'center' para 'flex-start' */
     gap: 20px;
     padding: 0 20px;
   }
@@ -84,6 +84,7 @@
     max-width: 400px;
     min-height: auto;
     padding: 25px;
+    text-align: left; /* Garante que o texto fique alinhado à esquerda */
   }
 
   .service-icon {
@@ -92,7 +93,7 @@
     min-width: 56px !important;
     min-height: 56px !important;
     flex: 0 0 56px !important;
-    margin: 0 auto 20px;
+    margin: 0 0 20px 0; /* Alterado: remove o 'auto' para forçar o ícone para a esquerda */
   }
 
   .service-icon img {
