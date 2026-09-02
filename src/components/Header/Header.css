@@ -1,10 +1,63 @@
-/* Botão hambúrguer escondido no computador */
+.site-header {
+  align-items: center;
+  background-color: #ffffff;
+  display: flex;
+  gap: 32px;
+  justify-content: space-between;
+  padding: 14px 9%;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.site-logo {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.site-logo img {
+  width: 75px;
+}
+
+.site-menu {
+  align-items: center;
+  display: flex;
+  gap: 28px;
+  margin-left: auto;
+}
+
+.site-menu a {
+  color: #102542;
+  font-size: 15px;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.site-menu a:hover,
+.site-menu a:focus-visible {
+  color: #0b3e6d;
+}
+
+.agendar-item {
+  display: flex;
+}
+
+.menu-checkbox,
 .menu-toggle {
   display: none;
 }
 
+.sr-only {
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  clip: rect(0, 0, 0, 0);
+}
+
 /* Botão de agendamento */
-.schedule-button {
+.agendar-btn {
   background-color: #0b3e6d;
   color: white;
   border: 1px solid #0b3e6d;
@@ -15,65 +68,96 @@
   transition: 0.3s ease;
 }
 
-.schedule-button:hover {
+.agendar-btn:hover {
   background-color: #082f54;
   border-color: #082f54;
 }
 
 @media (max-width: 768px) {
-  nav {
-    padding: 15px 20px;
-    position: relative;
+  .site-header {
+    padding: 12px 20px;
+    position: sticky;
   }
 
-  nav img {
+  .site-logo img {
     width: 65px;
   }
 
-  /* Mostra o hambúrguer */
   .menu-toggle {
-    display: block;
-    background: none;
-    border: none;
-    color: #0b3e6d;
-    font-size: 30px;
-    padding: 0;
+    align-items: flex-end;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 8px 0 8px 8px;
   }
 
-  /* Esconde o menu inicialmente */
-  nav ul {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
+  .menu-toggle span {
+    background-color: #0b3e6d;
+    display: block;
+    height: 2px;
+    transition:
+      transform 0.2s ease,
+      opacity 0.2s ease;
+    width: 25px;
+  }
+
+  .menu-checkbox:focus-visible + .menu-toggle {
+    outline: 2px solid #0b3e6d;
+    outline-offset: 4px;
+  }
+
+  .menu-checkbox:checked + .menu-toggle span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .menu-checkbox:checked + .menu-toggle span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-checkbox:checked + .menu-toggle span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  .site-menu {
+    background-color: #ffffff;
+    bottom: 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
     flex-direction: column;
     gap: 0;
-    background-color: white;
-    padding: 10px 0;
+    height: auto;
+    left: 0;
     margin: 0;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-height: 0;
+    overflow-y: auto;
+    position: fixed;
+    right: 0;
+    top: 89px;
+    transition: max-height 0.25s ease;
+    width: auto;
   }
 
-  /* Mostra o menu quando clicar */
-  nav ul.menu-open {
-    display: flex;
+  .menu-checkbox:checked ~ .site-menu {
+    max-height: calc(100vh - 89px);
   }
 
-  nav ul li {
-    width: 100%;
+  .site-menu li {
     text-align: center;
+    width: 100%;
   }
 
-  nav ul li a {
+  .site-menu a {
     display: block;
-    padding: 12px;
-    font-size: 16px;
+    padding: 13px 20px;
   }
 
-  /* Esconde Agendar Consulta no celular */
-  .schedule-button {
-    display: none;
+  .agendar-item {
+    justify-content: center;
+    padding: 12px 20px 18px;
+  }
+
+  .agendar-item .agendar-btn {
+    display: block;
   }
 }

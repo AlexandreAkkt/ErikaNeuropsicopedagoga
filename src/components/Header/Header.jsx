@@ -1,116 +1,41 @@
-import { useState } from "react";
 import "./Header.css";
 import logo from "../../assets/mineLogo.png";
 
 function Header() {
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  // Função para controlar a rolagem suave entre as seções
-  const handleScroll = (event, id) => {
-    // Impede o pulo automático do link
-    event.preventDefault();
-
-    // Localiza a seção pelo ID
-    const section = document.getElementById(id);
-
-    if (section) {
-      // Altura do Header para a seção não ficar escondida atrás dele
-      const headerHeight = 80;
-
-      // Posição atual da página
-      const startPosition = window.scrollY;
-
-      // Calcula a posição da seção na página
-      const sectionPosition =
-        section.getBoundingClientRect().top + window.scrollY;
-
-      // Define a posição final descontando a altura do Header
-      const targetPosition = sectionPosition - headerHeight;
-
-      // Define a duração da animação
-      const duration = 1200;
-
-      // Registra o momento em que a animação começa
-      const startTime = performance.now();
-
-      // Função responsável pela animação da rolagem
-      const animation = (currentTime) => {
-        const elapsed = currentTime - startTime;
-        const progress = Math.min(elapsed / duration, 1);
-
-        const ease =
-          progress < 0.5
-            ? 2 * progress * progress
-            : 1 - Math.pow(-2 * progress + 2, 2) / 2;
-
-        window.scrollTo(
-          0,
-          startPosition + (targetPosition - startPosition) * ease,
-        );
-
-        if (progress < 1) {
-          requestAnimationFrame(animation);
-        }
-      };
-
-      requestAnimationFrame(animation);
-    }
-
-    // Fecha o menu depois de clicar em uma opção
-    setMenuOpen(false);
-  };
-
   return (
-    <nav>
-      <div>
+    <nav className="site-header" id="top">
+      <a className="site-logo" href="#top" aria-label="Ir para o início">
         <img src={logo} alt="Logo" />
-      </div>
+      </a>
 
-      {/* Botão do menu hambúrguer */}
-      <button
-        className="menu-toggle"
-        onClick={() => setMenuOpen(!menuOpen)}
-        aria-label="Abrir menu"
-        aria-expanded={menuOpen}
-      >
-        ☰
-      </button>
+      <input className="menu-checkbox" type="checkbox" id="menu-toggle" />
+      <label className="menu-toggle" htmlFor="menu-toggle">
+        <span aria-hidden="true" />
+        <span aria-hidden="true" />
+        <span aria-hidden="true" />
+      </label>
 
-      {/* Menu de navegação */}
-      <ul className={menuOpen ? "menu-open" : ""}>
+      <ul className="site-menu">
         <li>
-          <a href="#about" onClick={(event) => handleScroll(event, "about")}>
-            Sobre
-          </a>
+          <a href="#about">Sobre</a>
         </li>
 
         <li>
-          <a
-            href="#services"
-            onClick={(event) => handleScroll(event, "services")}
-          >
-            Serviços
-          </a>
+          <a href="#services">Serviços</a>
         </li>
 
         <li>
-          <a href="#areas" onClick={(event) => handleScroll(event, "areas")}>
-            Áreas de atuação
-          </a>
+          <a href="#areas">Áreas de atuação</a>
         </li>
 
         <li>
-          <a
-            href="#contact"
-            onClick={(event) => handleScroll(event, "contact")}
-          >
-            Contato
-          </a>
+          <a href="#contact">Contato</a>
+        </li>
+
+        <li className="agendar-item">
+          <button className="agendar-btn">Agendar Consulta</button>
         </li>
       </ul>
-
-      {/* Botão de agendamento */}
-      <button className="schedule-button">Agendar Consulta</button>
     </nav>
   );
 }

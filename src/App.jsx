@@ -4,10 +4,12 @@ import About from "./components/About/About";
 import Services from "./components/Services/Services";
 import Areas from "./components/Areas/Areas";
 import Contact from "./components/Contact/Contact";
+import Header from "./components/Header/Header";
 
 function App() {
   return (
     <>
+      <Header />
       <Hero />
       <About />
       <Services />
