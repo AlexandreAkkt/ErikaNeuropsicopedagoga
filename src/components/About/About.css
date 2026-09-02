@@ -25,6 +25,7 @@
 
 .about-content {
   width: 55%;
+  text-align: left; /* Garante o alinhamento à esquerda de forma geral */
 }
 
 .about-tag {
@@ -57,7 +58,6 @@
   list-style: none;
   padding: 0;
   margin: 0;
-
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -68,8 +68,8 @@
   display: flex;
   flex-direction: column;
   gap: 4px;
-
   color: #6b7280;
+  text-align: left; /* Garante que os itens da lista fiquem à esquerda */
 }
 
 /* Título de cada item */
@@ -90,7 +90,7 @@
 @media (max-width: 768px) {
   .about {
     flex-direction: column;
-    text-align: center;
+    text-align: left; /* Mudado de center para left */
   }
 
   .about-image {
@@ -99,6 +99,7 @@
 
   .about-content {
     width: 100%;
+    text-align: left; /* Força o alinhamento à esquerda no mobile */
   }
 
   .about-list {
@@ -106,6 +107,6 @@
   }
 
   .about-list li {
-    text-align: center; /* Centraliza o conteúdo dos itens da lista */
+    text-align: left; /* Mudado de center para left */
   }
 }
