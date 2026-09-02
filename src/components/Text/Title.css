@@ -1,30 +1,9 @@
 .title-card {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 12px;
-  margin-bottom: 50px; /*margem inferior para separar do conteúdo abaixo*/
-  margin-top: 50px; /*margem superior para separar do conteúdo acima*/
-}
-
-/* Subtítulo */
-.title-card p {
-  font-size: 18px; /* Tamanho do texto */
-  color: #6b7280; /* Cinza */
-}
-
-/* Título da seção */
-.title-card h2 {
-  font-size: 40px; /* Tamanho da fonte */
-  color: #102542; /* Azul escuro */
-}
-.title-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 12px;
+  align-items: flex-start;
+  text-align: left;
+  gap: 16px; /* Aumenta o espaço (parágrafo) entre o título e o texto */
   margin-bottom: 50px;
   margin-top: 50px;
 }
@@ -41,13 +20,11 @@
   color: #102542;
 }
 
-/* 
-  Regra para dispositivos móveis 
-  Muda o alinhamento de centro para a esquerda
-*/
+/* Dispositivos móveis */
 @media (max-width: 768px) {
   .title-card {
-    align-items: flex-start; /* Alinha o bloco do flexbox à esquerda */
-    text-align: left; /* Alinha o texto interno à esquerda */
+    align-items: flex-start;
+    text-align: left;
+    padding-left: 5px; /* Dá um leve recuo para não colar na lateral */
   }
 }
