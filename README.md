@@ -1,8 +1,13 @@
-# React + Vite
+Erika Neuropsicopedagoga
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Site institucional em desenvolvimento para uma profissional de Neuropsicopedagogia, construído com **React** e **Vite**. O projeto está sendo criado como um estudo de caso para praticar o desenvolvimento Frontend, a construção de componentes reutilizáveis e o design responsivo.
 
-Currently, two official plugins are available:
+  Status do Projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ Em andamento.  O layout e os componentes estão sendo ajustados gradualmente (como a otimização de cards de serviços e o alinhamento de textos e ícones na versão mobile).
+
+Tecnologias Utilizadas
+
+* React
+* Vite
+* JavaScript / CSS / HTML
