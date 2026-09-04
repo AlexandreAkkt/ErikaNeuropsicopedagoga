@@ -9,9 +9,7 @@ function Hero() {
           Cuidado especializado para o desenvolvimento
         </span>
 
-        <h1>
-          Neuropsicopedagogia <span>com afeto e ciência.</span>
-        </h1>
+        <h1>Neuropsicopedagogia com afeto e ciência.</h1>
 
         <p>
           Apoio especializado para crianças, adolescentes e adultos que

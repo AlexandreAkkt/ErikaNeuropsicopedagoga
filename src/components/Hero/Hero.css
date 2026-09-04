@@ -86,9 +86,9 @@
   cursor: pointer;
   transition: all 0.3s ease;
   text-decoration: none;
-  background-color: #2563eb;
+  background-color: #0e4271;
   color: #ffffff;
-  box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.4);
+  box-shadow: 0 8px 20px -5px rgba(14, 66, 113, 0.3);
 }
 
 .button-primary:hover {
