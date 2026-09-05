@@ -19,10 +19,10 @@ function Hero() {
 
         <div className="hero-buttons">
           <a
-            href="#" // Substitua pelo link do seu formulário quando criar
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeA_hCbNqUEDBlzGLm6nJKtwJd2hFrnIHcSnt5It0THd21iYg/viewform" 
             className="button-primary"
           >
-            Agende sua Avaliação
+            Enviar Anamnese
           </a>
         </div>
       </div>
