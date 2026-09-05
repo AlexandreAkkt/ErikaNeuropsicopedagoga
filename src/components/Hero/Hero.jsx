@@ -20,8 +20,8 @@ function Hero() {
         </h1>
 
         <div className="hero-line">
-          <span></span>
-          <strong>♥</strong>
+          
+          
         </div>
 
         <p>
@@ -37,7 +37,7 @@ function Hero() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span>✈</span>
+            <span></span>
             Enviar Anamnese
           </a>
         </div>
@@ -45,32 +45,32 @@ function Hero() {
         {/* Benefícios */}
         <div className="hero-benefits">
           <div className="benefit-card">
-            <div className="benefit-icon cognitive">🧠</div>
+            <div className="benefit-icon cognitive"></div>
             <h3>Avaliação Cognitiva</h3>
             <p>Entendimento profundo e único.</p>
           </div>
 
           <div className="benefit-card">
-            <div className="benefit-icon care">🌱</div>
+            <div className="benefit-icon care"></div>
             <h3>Acolher, entender e potencializar.</h3>
             <p>Cada história importa.</p>
           </div>
 
           <div className="benefit-card">
-            <div className="benefit-icon progress">★</div>
+            <div className="benefit-icon progress"></div>
             <h3>Cada conquista importa.</h3>
             <p>Valorizar cada passo alcançado.</p>
           </div>
 
           <div className="benefit-card">
-            <div className="benefit-icon together">♧</div>
+            <div className="benefit-icon together"></div>
             <h3>Juntos, transformamos desafios.</h3>
             <p>Desenvolvimento com propósito.</p>
           </div>
         </div>
 
         <div className="hero-security">
-          <span>♧</span>
+          <span></span>
           Seus dados são protegidos com total confidencialidade.
         </div>
       </div>
@@ -82,7 +82,7 @@ function Hero() {
         </div>
 
         <div className="image-message">
-          <span>♡</span>
+          <span>*</span>
           <p>
             Aqui, cada passo é acompanhado com cuidado, ciência e muita
             empatia.
