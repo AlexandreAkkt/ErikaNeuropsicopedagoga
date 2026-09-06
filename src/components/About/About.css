@@ -1,6 +1,7 @@
 #about {
   padding: 100px 9%;
-  background-color: #ffffff;
+  /* Um fundo bem sutil e acolhedor em vez do branco puro */
+  background-color: #faf8f6; 
 }
 
 .about {
@@ -12,7 +13,6 @@
   margin: 0 auto;
 }
 
-/* Estilo da Imagem inspirada nas referências */
 .about-image {
   width: 45%;
   display: flex;
@@ -29,11 +29,12 @@
 .about-image img {
   width: 100%;
   height: 520px;
-  border-radius: 12px;
+  border-radius: 16px;
   object-fit: cover;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
 }
 
+/* Badge com detalhe inspirado na cor das flores da foto */
 .about-image-badge {
   position: absolute;
   bottom: -20px;
@@ -45,11 +46,12 @@
   display: flex;
   align-items: center;
   gap: 12px;
+  border-left: 4px solid #7c3aed; /* Tom roxo elegante alinhado à foto */
 }
 
 .about-image-badge span {
   font-size: 20px;
-  color: #0b3e6d;
+  color: #7c3aed;
 }
 
 .about-image-badge strong {
@@ -63,16 +65,16 @@
   color: #6b7280;
 }
 
-/* Conteúdo Textual */
 .about-content {
   width: 55%;
   text-align: left;
 }
 
+/* Tag com tom lilás suave combinando com o fundo da foto */
 .about-tag {
   display: inline-block;
-  background-color: #dceaff;
-  color: #0b3e6d;
+  background-color: #f3e8ff; 
+  color: #6b21a8; 
   padding: 8px 16px;
   border-radius: 30px;
   font-size: 13px;
@@ -87,12 +89,11 @@
   color: #102542;
   line-height: 1.2;
   margin-bottom: 20px;
-  font-family: inherit;
 }
 
 .about-content h2 span {
   display: block;
-  color: #4a5568;
+  color: #555b6e;
   font-weight: 400;
   font-size: 28px;
 }
@@ -104,7 +105,6 @@
   margin-bottom: 30px;
 }
 
-/* Grid de Recursos / Cards */
 .about-features {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -115,11 +115,15 @@
   display: flex;
   align-items: flex-start;
   gap: 12px;
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
 }
 
 .feature-icon {
-  background: #f7fafc;
-  border: 1px solid #e2e8f0;
+  background: #f3e8ff;
+  color: #7c3aed;
   font-size: 18px;
   width: 40px;
   height: 40px;
@@ -144,7 +148,6 @@
   line-height: 1.4;
 }
 
-/* Responsividade para Celulares */
 @media (max-width: 900px) {
   .about {
     flex-direction: column;

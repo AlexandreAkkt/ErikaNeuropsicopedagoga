@@ -1,5 +1,9 @@
 import "./About.css";
 import erikaAbout from "../../assets/erika.png";
+import estudoImg from "../../assets/estudo.png";
+import coracaoImg from "../../assets/coracaoo.png";
+import lupaImg from "../../assets/lupa.png";
+import familiaImg from "../../assets/familia.png";
 
 function About() {
   return (
@@ -14,7 +18,6 @@ function About() {
               alt="Erika Anjos - Neuropsicopedagoga"
             />
             <div className="about-image-badge">
-              <span>♡</span>
               <div>
                 <strong>Atendimento humanizado</strong>
                 <small>Cuidado em cada etapa</small>
@@ -41,8 +44,11 @@ function About() {
 
           {/* CARDS DE DIFERENCIAIS */}
           <div className="about-features">
+            
             <div className="about-feature">
-              <div className="feature-icon">🧠</div>
+              <div className="feature-icon">
+                <img src={estudoImg} alt="Ícone de Formação especializada" />
+              </div>
               <div>
                 <h3>Formação especializada</h3>
                 <p>Pós-graduação em Neuropsicopedagogia e Neurociências.</p>
@@ -50,7 +56,9 @@ function About() {
             </div>
 
             <div className="about-feature">
-              <div className="feature-icon">♡</div>
+              <div className="feature-icon">
+                <img src={coracaoImg} alt="Ícone de Atendimento humanizado" />
+              </div>
               <div>
                 <h3>Atendimento humanizado</h3>
                 <p>Abordagem acolhedora e individualizada para cada paciente.</p>
@@ -58,7 +66,9 @@ function About() {
             </div>
 
             <div className="about-feature">
-              <div className="feature-icon">✦</div>
+              <div className="feature-icon">
+                <img src={lupaImg} alt="Ícone Baseado em evidências" />
+              </div>
               <div>
                 <h3>Baseado em evidências</h3>
                 <p>Práticas fundamentadas em pesquisas científicas atuais.</p>
@@ -66,12 +76,15 @@ function About() {
             </div>
 
             <div className="about-feature">
-              <div className="feature-icon">👥</div>
+              <div className="feature-icon">
+                <img src={familiaImg} alt="Ícone de Família" />
+              </div>
               <div>
                 <h3>Orientação para famílias</h3>
                 <p>Suporte e orientação durante todo o processo.</p>
               </div>
             </div>
+
           </div>
 
         </div>
