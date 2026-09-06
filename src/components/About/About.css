@@ -8,105 +8,164 @@
   align-items: center;
   justify-content: space-between;
   gap: 70px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
+/* Estilo da Imagem inspirada nas referências */
 .about-image {
   width: 45%;
   display: flex;
   justify-content: center;
+  position: relative;
+}
+
+.about-image-card {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
 }
 
 .about-image img {
   width: 100%;
-  max-width: 500px;
-  border-radius: 20px;
+  height: 520px;
+  border-radius: 12px;
   object-fit: cover;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
 }
 
+.about-image-badge {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  background: #ffffff;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.about-image-badge span {
+  font-size: 20px;
+  color: #0b3e6d;
+}
+
+.about-image-badge strong {
+  display: block;
+  font-size: 13px;
+  color: #102542;
+}
+
+.about-image-badge small {
+  font-size: 11px;
+  color: #6b7280;
+}
+
+/* Conteúdo Textual */
 .about-content {
   width: 55%;
-  text-align: left; /* Garante o alinhamento à esquerda de forma geral */
+  text-align: left;
 }
 
 .about-tag {
   display: inline-block;
   background-color: #dceaff;
   color: #0b3e6d;
-  padding: 10px 20px;
+  padding: 8px 16px;
   border-radius: 30px;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .about-content h2 {
-  font-size: 30px;
+  font-size: 34px;
   color: #102542;
   line-height: 1.2;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+  font-family: inherit;
+}
+
+.about-content h2 span {
+  display: block;
+  color: #4a5568;
+  font-weight: 400;
+  font-size: 28px;
 }
 
 .about-content > p {
-  font-size: 18px;
+  font-size: 16px;
   color: #6b7280;
-  line-height: 1.8;
-  margin-bottom: 35px;
+  line-height: 1.7;
+  margin-bottom: 30px;
 }
 
-/* Lista de informações */
-.about-content ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
+/* Grid de Recursos / Cards */
+.about-features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 
-/* Cada item da lista */
-.about-content ul li {
+.about-feature {
   display: flex;
-  flex-direction: column;
-  gap: 4px;
-  color: #6b7280;
-  text-align: left; /* Garante que os itens da lista fiquem à esquerda */
+  align-items: flex-start;
+  gap: 12px;
 }
 
-/* Título de cada item */
-.about-content ul li strong {
+.feature-icon {
+  background: #f7fafc;
+  border: 1px solid #e2e8f0;
+  font-size: 18px;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.about-feature h3 {
   font-size: 14px;
-  font-weight: 600;
   color: #102542;
+  margin-bottom: 4px;
+  font-weight: 600;
 }
 
-/* Descrição de cada item */
-.about-content ul li p {
-  margin: 0;
+.about-feature p {
   font-size: 12px;
-  line-height: 1.5;
   color: #6b7280;
+  margin: 0;
+  line-height: 1.4;
 }
 
-@media (max-width: 768px) {
+/* Responsividade para Celulares */
+@media (max-width: 900px) {
   .about {
     flex-direction: column;
-    text-align: left; /* Mudado de center para left */
+    gap: 40px;
   }
 
-  .about-image {
-    width: 100%;
-  }
-
+  .about-image,
   .about-content {
     width: 100%;
-    text-align: left; /* Força o alinhamento à esquerda no mobile */
   }
 
-  .about-list {
-    text-align: left;
+  .about-image img {
+    height: 400px;
   }
 
-  .about-list li {
-    text-align: left; /* Mudado de center para left */
+  .about-image-badge {
+    right: 10px;
+    bottom: -15px;
+  }
+
+  .about-features {
+    grid-template-columns: 1fr;
   }
 }
