@@ -1,4 +1,10 @@
-/* Container principal da seção */
+/* Seção inteira com a largura total e a cor de fundo */
+.areas-section {
+  background-color: #faf8f6;
+  width: 100%;
+}
+
+/* Container principal apenas centraliza e dá o espaçamento */
 .container {
   max-width: 1200px;
   margin: 0 auto;
