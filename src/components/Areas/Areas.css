@@ -1,6 +1,6 @@
 /* Seção inteira com a largura total e a cor de fundo */
 .areas-section {
-  background-color: #faf8f6;
+  background-color: #f8fafc; /* Um cinza-azulado muito suave que passa tom clínico e moderno */
   width: 100%;
 }
 
@@ -16,33 +16,31 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px;
-  margin-bottom: 50px;
+  gap: 12px;
+  margin-bottom: 48px;
   text-align: center;
 }
 
-/* Grid dos cards */
+/* Grid dos cards limpo e responsivo */
 .areas-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  width: 100%;
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
   .container {
-    padding: 60px 20px;
+    padding: 50px 20px;
   }
 
   .container-title {
-    gap: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
   }
 
   .areas-grid {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+    grid-template-columns: 1fr; /* 1 card por linha em telas móbile */
+    gap: 16px;
   }
 }

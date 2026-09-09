@@ -1,43 +1,28 @@
-/* Card individual */
-.area-card {
-  flex: 1 1 260px; /* Largura mínima de 260px e adapta automaticamente */
-  max-width: 270px; /* Largura máxima */
-
-  height: 90px; /* Altura do card */
-
-  display: flex; /* Centraliza o texto */
-  justify-content: center;
-  align-items: center;
-
-  border: 1px solid #dbeafe; /* Borda azul clara */
-  border-radius: 12px; /* Cantos arredondados */
-
-  background: linear-gradient(
-    135deg,
-    #f0f6ff,
-    #faf5ff
-  ); /* Fundo em degradê suave */
-
-  font-size: 18px; /* Tamanho do texto */
-  font-weight: 600; /* Texto em seminegrito */
-  color: #102542; /* Cor do texto */
-
-  cursor: default; /* Cursor padrão */
+.card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
-h3 {
-  text-align: center; /* Centraliza o texto */
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08);
 }
 
-/* Quando passar o mouse */
-/* Se não quiser efeito nenhum, pode apagar esse bloco */
+.card h3 {
+  font-size: 1.1rem;
+  color: #1e293b;
+  margin-bottom: 8px;
+}
 
-
-/* Responsividade para telas menores */
-@media (max-width: 768px) {
-  .area-card {
-    flex: 1 1 100%;
-    max-width: 100%;
-    font-size: 16px;
-  }
+.card p {
+  font-size: 0.875rem;
+  color: #64748b;
+  line-height: 1.5;
 }
