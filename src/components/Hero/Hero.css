@@ -1,6 +1,4 @@
-/* ================================
-   HERO
-================================ */
+
 
 .hero {
   min-height: 720px;
@@ -23,9 +21,7 @@
     linear-gradient(135deg, #f7faff 0%, #edf4ff 100%);
 }
 
-/* ================================
-   DECORAÇÕES DE FUNDO
-================================ */
+
 
 .hero-decoration {
   position: absolute;
@@ -57,9 +53,7 @@
   background: rgba(96, 165, 250, 0.08);
 }
 
-/* ================================
-   CONTEÚDO
-================================ */
+
 
 .hero-content {
   width: 52%;
@@ -69,9 +63,7 @@
   z-index: 2;
 }
 
-/* ================================
-   TAG
-================================ */
+
 
 .hero-tag {
   display: inline-flex;
@@ -92,9 +84,7 @@
   margin-bottom: 25px;
 }
 
-/* ================================
-   TÍTULO
-================================ */
+
 
 .hero h1 {
   margin: 0;
@@ -129,9 +119,7 @@
   transform: rotate(-10deg);
 }
 
-/* ================================
-   LINHA DECORATIVA
-================================ */
+
 
 .hero-line {
   display: flex;
@@ -156,9 +144,7 @@
   font-size: 18px;
 }
 
-/* ================================
-   TEXTO
-================================ */
+
 
 .hero p {
   margin: 0;
@@ -171,9 +157,9 @@
   max-width: 590px;
 }
 
-/* ================================
+/* 
    BOTÃO
-================================ */
+ */
 
 .hero-buttons {
   margin-top: 30px;
@@ -220,9 +206,7 @@
   box-shadow: 0 18px 35px rgba(14, 66, 113, 0.28);
 }
 
-/* ================================
-   BENEFÍCIOS
-================================ */
+
 
 .hero-benefits {
   display: grid;
@@ -307,9 +291,7 @@
   line-height: 1.4;
 }
 
-/* ================================
-   CONFIDENCIALIDADE
-================================ */
+
 
 .hero-security {
   display: flex;
@@ -329,9 +311,7 @@
   font-size: 16px;
 }
 
-/*
-   IMAGEM
- */
+
 
 .hero-image-wrapper {
   width: 48%;
@@ -342,7 +322,7 @@
   align-items: center;
   justify-content: center;
 
-  z-index: 2;
+  z-index: 3;
 }
 
 .hero-image {
@@ -474,7 +454,7 @@
 
 @media (max-width: 768px) {
   .hero {
-    min-height: auto;
+    
 
     flex-direction: column;
 
