@@ -1,29 +1,70 @@
 .card {
   background-color: #ffffff;
   border: 1px solid #e2e8f0;
-  border-radius: 12px;
-  padding: 20px;
+  border-radius: 14px;
+
+  padding: 28px;
+
+  min-height: 230px;
+  box-sizing: border-box;
+
   text-align: left;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
 
   transition:
-    transform 0.2s ease,
+    border-color 0.2s ease,
     box-shadow 0.2s ease;
 }
 
 .card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08);
+  border-color: #cbd5e1;
+  box-shadow: 0 8px 18px rgba(15, 62, 109, 0.07);
 }
 
-.card h3 {
-  font-size: 1.1rem;
-  color: #1e293b;
-  margin-bottom: 8px;
+/* Área do ícone */
+
+.card-icon {
+  width: 56px;
+  height: 56px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 22px;
+
+  background-color: #e6e7ff;
+  border-radius: 12px;
+
+  overflow: hidden;
 }
 
-.card p {
-  font-size: 0.875rem;
+.card-icon img {
+  width: 30px;
+  height: 30px;
+
+  object-fit: contain;
+  display: block;
+}
+
+/* Conteúdo */
+
+.card-content h3 {
+  margin: 0 0 10px;
+
+  color: #0b3e6d;
+
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.card-content p {
+  margin: 0;
+
   color: #64748b;
-  line-height: 1.5;
+
+  font-size: 0.9rem;
+  line-height: 1.6;
 }
