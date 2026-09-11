@@ -1,65 +1,178 @@
 /* Seção de contato */
+
 #contact {
-  padding: 80px 20px;
+  padding: 90px 20px;
   background-color: #f8fbff;
 }
 
 /* Container principal */
+
 #contact .container {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* Texto abaixo do título */
-.contact-title p {
-  font-size: 18px;
-  color: #6b7280;
+/* Título */
+
+.contact-title {
+  margin-bottom: 50px;
 }
 
-/* Onde ficam todos os cards */
+.contact-title p {
+  font-size: 17px;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+/* Área dos cards */
+
 .contact-content {
   display: flex;
   justify-content: center;
+  gap: 25px;
   flex-wrap: wrap;
-  gap: 30px;
 }
 
-/* Card individual */
+/* Card */
+
 .contact-card {
-  width: 320px;
-  padding: 30px;
+  width: 330px;
+  min-height: 230px;
+  padding: 35px 25px;
+
   background-color: #ffffff;
   border: 1px solid #dbeafe;
-  border-radius: 12px;
+  border-radius: 16px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
   text-align: center;
   box-sizing: border-box;
+
+  box-shadow: 0 6px 20px rgba(16, 37, 66, 0.05);
+}
+
+/* Ícone */
+
+.contact-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 18px;
+
+  color: #0b3e6d;
 }
 
 /* Título do card */
+
 .contact-card h3 {
+  margin: 0 0 8px;
+
   color: #102542;
-  margin-bottom: 15px;
-  font-size: 22px;
+  font-size: 20px;
 }
 
-/* Link */
+/* Descrição */
+
+.contact-card p {
+  margin: 0 0 14px;
+
+  color: #6b7280;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* Links */
+
 .contact-card a {
-  color: #2563eb;
+  color: #0f8e8c;
+
   text-decoration: none;
-  font-size: 18px;
-  font-weight: 500;
-  overflow-wrap: anywhere;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
-/* Quando passar o mouse no link */
 .contact-card a:hover {
   text-decoration: underline;
 }
 
+/* Chamada final */
+
+.contact-cta {
+  max-width: 700px;
+
+  margin: 55px auto 0;
+  padding: 35px 25px;
+
+  text-align: center;
+
+  background-color: #0b3e6d;
+  border-radius: 16px;
+}
+
+/* Título da chamada */
+
+.contact-cta h3 {
+  margin: 0 0 10px;
+
+  color: #ffffff;
+  font-size: 24px;
+}
+
+/* Texto da chamada */
+
+.contact-cta p {
+  margin: 0 0 25px;
+
+  color: #e5edf5;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Botão */
+
+.contact-button {
+  display: inline-block;
+
+  padding: 13px 25px;
+
+  background-color: #ffffff;
+  color: #1e252b;
+
+  border-radius: 8px;
+
+  text-decoration: none;
+
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.contact-button:hover {
+  background-color: #f1f5f9;
+}
+
 /* Responsividade */
+
 @media (max-width: 768px) {
   #contact {
     padding: 60px 20px;
+  }
+
+  .contact-title {
+    margin-bottom: 35px;
+  }
+
+  .contact-title p {
+    font-size: 16px;
+    line-height: 1.6;
   }
 
   .contact-content {
@@ -70,20 +183,25 @@
 
   .contact-card {
     width: 100%;
-    max-width: 320px;
-    padding: 25px 20px;
-  }
-
-  .contact-title p {
-    font-size: 16px;
-    line-height: 1.6;
+    max-width: 380px;
+    min-height: 210px;
+    padding: 30px 20px;
   }
 
   .contact-card h3 {
-    font-size: 20px;
+    font-size: 19px;
   }
 
   .contact-card a {
-    font-size: 16px;
+    font-size: 15px;
+  }
+
+  .contact-cta {
+    margin-top: 40px;
+    padding: 30px 20px;
+  }
+
+  .contact-cta h3 {
+    font-size: 21px;
   }
 }
