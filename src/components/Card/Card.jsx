@@ -1,26 +1,27 @@
 import PropTypes from "prop-types";
 import "./Card.css";
 
-function Card({ title, description, image }) {
+function Card({ image, title, description, variant = "default" }) {
   return (
-    <article className="card">
-      <div className="card-icon">
-        <img src={image} alt="" />
-      </div>
-
+    <div className={`card ${variant === "large" ? "card-large" : ""}`}>
+      {image && (
+        <div className="card-icon">
+          <img src={image} alt={title} />
+        </div>
+      )}
       <div className="card-content">
         <h3>{title}</h3>
-
         {description && <p>{description}</p>}
       </div>
-    </article>
+    </div>
   );
 }
 
 Card.propTypes = {
+  image: PropTypes.string,
   title: PropTypes.string.isRequired,
   description: PropTypes.string,
-  image: PropTypes.string.isRequired,
+  variant: PropTypes.string,
 };
 
 export default Card;
