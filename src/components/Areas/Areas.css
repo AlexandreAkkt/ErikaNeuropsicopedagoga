@@ -1,46 +1,39 @@
-/* Seção inteira com a largura total e a cor de fundo */
-.areas-section {
-  background-color: #f8fafc; /* Um cinza-azulado muito suave */
+#areas {
   width: 100%;
+  padding: 90px 7%;
+  background-color: #f8fafc;
+  box-sizing: border-box;
 }
 
-/* Container principal apenas centraliza e dá o espaçamento */
-.container {
+.areas-grid {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 80px 20px;
-}
 
-/* Container do título e subtítulo */
-.container-title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 48px;
-  text-align: center;
-}
-
-/* Grid dos cards limpo e responsivo */
-.areas-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 24px;
-  width: 100%;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-  .container {
-    padding: 50px 20px;
-  }
-
-  .container-title {
-    margin-bottom: 32px;
+/* Tablet */
+@media (max-width: 1024px) {
+  #areas {
+    padding: 70px 5%;
   }
 
   .areas-grid {
-    grid-template-columns: 1fr; /* 1 card por linha em telas móbile */
-    gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+/* Celular */
+@media (max-width: 768px) {
+  #areas {
+    padding: 60px 5%;
+  }
+
+  .areas-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
   }
 }

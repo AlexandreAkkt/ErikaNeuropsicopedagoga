@@ -3,28 +3,89 @@
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
-  gap: 16px; /* Aumenta o espaço (parágrafo) entre o título e o texto */
-  margin-bottom: 50px;
-  margin-top: 50px;
+
+  max-width: 1200px;
+  margin: 0 auto 45px;
+
+  gap: 14px;
 }
 
-/* Subtítulo */
-.title-card p {
-  font-size: 18px;
-  color: #6b7280;
-}
-
-/* Título da seção */
 .title-card h2 {
-  font-size: 40px;
-  color: #102542;
+  margin: 0;
+
+  color: #0f2850;
+  font-size: clamp(42px, 4vw, 60px);
+  line-height: 1.08;
+  font-weight: 800;
+  letter-spacing: -1.5px;
 }
 
-/* Dispositivos móveis */
+/* Linha decorativa igual ao Hero */
+.title-line {
+  display: flex;
+  align-items: center;
+
+  margin: 4px 0 2px;
+}
+
+.title-line span {
+  width: 42px;
+  height: 3px;
+
+  background: #4f83dc;
+  border-radius: 20px;
+}
+
+.title-card p {
+  margin: 0;
+
+  max-width: 700px;
+
+  color: #405577;
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+
+/* Tablet */
+@media (max-width: 1100px) {
+  .title-card {
+    margin-bottom: 40px;
+  }
+
+  .title-card h2 {
+    font-size: 46px;
+  }
+}
+
+
+/* Celular */
 @media (max-width: 768px) {
   .title-card {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 35px;
+
     align-items: flex-start;
     text-align: left;
-    padding-left: 5px; /* Dá um leve recuo para não colar na lateral */
+  }
+
+  .title-card h2 {
+    font-size: 37px;
+    line-height: 1.1;
+    letter-spacing: -1px;
+  }
+
+  .title-card p {
+    font-size: 16px;
+    line-height: 1.55;
+  }
+}
+
+
+/* Celulares pequenos */
+@media (max-width: 430px) {
+  .title-card h2 {
+    font-size: 32px;
   }
 }
