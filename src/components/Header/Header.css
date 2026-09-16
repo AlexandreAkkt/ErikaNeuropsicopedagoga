@@ -121,25 +121,23 @@
 
   .site-menu {
     background-color: #ffffff;
-    bottom: 0;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     gap: 0;
-    height: auto;
-    left: 0;
     margin: 0;
     max-height: 0;
     overflow-y: auto;
-    position: fixed;
+    position: absolute;
+    top: 100%;
+    left: 0;
     right: 0;
-    top: 89px;
     transition: max-height 0.25s ease;
     width: auto;
   }
 
   .menu-checkbox:checked ~ .site-menu {
-    max-height: calc(100vh - 89px);
+    max-height: 80vh;
   }
 
   .site-menu li {
