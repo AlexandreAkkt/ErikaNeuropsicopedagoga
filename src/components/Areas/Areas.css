@@ -1,6 +1,6 @@
 #areas {
   width: 100%;
-  padding: 90px 7%;
+  padding: 90px 10%;
   background-color: #f8fafc;
   box-sizing: border-box;
 }
@@ -9,7 +9,7 @@
   max-width: 1200px;
   margin: 0 auto;
 
-  display: grid;
+  display: grid; /*alternativa ao flex*/
   grid-template-columns: repeat(4, 1fr);
   gap: 24px;
 }
