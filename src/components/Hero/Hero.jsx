@@ -10,7 +10,7 @@ function Hero() {
 
       <div className="hero-content">
         <span className="hero-tag">
-           &nbsp; Cuidado especializado para o desenvolvimento
+          &nbsp; Cuidado especializado para o desenvolvimento
         </span>
 
         <h1>
@@ -19,15 +19,12 @@ function Hero() {
           com <span>afeto</span> e ciência.
         </h1>
 
-        <div className="hero-line">
-          
-          
-        </div>
+        <div className="hero-line"></div>
 
         <p>
           Apoio especializado para crianças, adolescentes e adultos que
-          enfrentam dificuldades de aprendizagem, unindo neurociência e
-          educação em uma abordagem humanizada.
+          enfrentam dificuldades de aprendizagem, unindo neurociência e educação
+          em uma abordagem humanizada.
         </p>
 
         <div className="hero-buttons">
@@ -84,8 +81,7 @@ function Hero() {
         <div className="image-message">
           <span>*</span>
           <p>
-            Aqui, cada passo é acompanhado com cuidado, ciência e muita
-            empatia.
+            Aqui, cada passo é acompanhado com cuidado, ciência e muita empatia.
           </p>
         </div>
       </div>
