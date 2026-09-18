@@ -1,9 +1,10 @@
 /* Estilo principal do rodapé */
 .footer {
-  background: #121b2d;
+  position: relative;
+  background: linear-gradient(180deg, #16223a 0%, #0a0f1c 100%);
   color: white;
 
-  padding: 30px 3%;
+  padding: 40px 3% 30px;
 
   display: flex;
   flex-direction: column;
@@ -15,10 +16,28 @@
   gap: 18px;
 }
 
+/* Detalhe de assinatura visual no topo do footer */
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #0b3e6d, #2f80b8, #0b3e6d);
+}
+
 /* Nome da marca */
 .footer h2 {
   font-size: 28px;
+  font-weight: 700;
   margin: 0;
+  letter-spacing: 0.3px;
+}
+
+.footer-highlight {
+  color: #4fa8e0;
+  font-weight: inherit;
 }
 
 /* Descrição do rodapé */
@@ -29,17 +48,25 @@
   line-height: 1.6;
 }
 
+/* Linha divisória sutil */
+.footer-divider {
+  width: 60px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.15);
+  margin: 6px 0;
+}
+
 /* Direitos autorais */
 .footer span {
   color: #707b8f;
   font-size: 14px;
-  margin: 10px 0 0;
+  margin: 0;
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
   .footer {
-    padding: 30px 20px;
+    padding: 30px 20px 24px;
     gap: 14px;
   }
 
