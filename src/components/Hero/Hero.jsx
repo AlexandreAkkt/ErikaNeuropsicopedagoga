@@ -10,13 +10,13 @@ function Hero() {
 
       <div className="hero-content">
         <span className="hero-tag">
-          &nbsp; Cuidado especializado para o desenvolvimento
+          Cuidado especializado para o desenvolvimento
         </span>
 
         <h1>
           Neuropsicopedagogia
           <br />
-          com <span>afeto</span> e ciência.
+          <span className="hero-lede">com afeto e ciência.</span>
         </h1>
 
         <div className="hero-line"></div>
@@ -34,32 +34,31 @@ function Hero() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span></span>
             Enviar Anamnese
           </a>
         </div>
 
         {/* Benefícios */}
         <div className="hero-benefits">
-          <div className="benefit-card">
+          <div className="benefit-item">
             <div className="benefit-icon cognitive"></div>
             <h3>Avaliação Cognitiva</h3>
             <p>Entendimento profundo e único.</p>
           </div>
 
-          <div className="benefit-card">
+          <div className="benefit-item">
             <div className="benefit-icon care"></div>
             <h3>Acolher, entender e potencializar.</h3>
             <p>Cada história importa.</p>
           </div>
 
-          <div className="benefit-card">
+          <div className="benefit-item">
             <div className="benefit-icon progress"></div>
             <h3>Cada conquista importa.</h3>
             <p>Valorizar cada passo alcançado.</p>
           </div>
 
-          <div className="benefit-card">
+          <div className="benefit-item">
             <div className="benefit-icon together"></div>
             <h3>Juntos, transformamos desafios.</h3>
             <p>Desenvolvimento com propósito.</p>
