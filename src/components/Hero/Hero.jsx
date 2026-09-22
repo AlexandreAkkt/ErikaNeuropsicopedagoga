@@ -77,13 +77,6 @@ function Hero() {
         <div className="hero-image">
           <img src={erika} alt="Atendimento em neuropsicopedagogia" />
         </div>
-
-        <div className="image-message">
-          <span>*</span>
-          <p>
-            Aqui, cada passo é acompanhado com cuidado, ciência e muita empatia.
-          </p>
-        </div>
       </div>
     </section>
   );
