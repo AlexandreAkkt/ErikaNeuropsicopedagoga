@@ -4,11 +4,9 @@ import erika from "../../assets/neuroerika.png";
 function Hero() {
   return (
     <section className="hero">
-      {/* Elementos decorativos */}
       <div className="hero-decoration hero-decoration-1"></div>
       <div className="hero-decoration hero-decoration-2"></div>
 
-      {/* Conteúdo principal */}
       <div className="hero-content">
         <span className="hero-tag">
           Cuidado especializado para o desenvolvimento
@@ -28,7 +26,6 @@ function Hero() {
           em uma abordagem humanizada.
         </p>
 
-        {/* Botão */}
         <div className="hero-buttons">
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLSeA_hCbNqUEDBlzGLm6nJKtwJd2hFrnIHcSnt5It0THd21iYg/viewform"
@@ -40,7 +37,6 @@ function Hero() {
           </a>
         </div>
 
-        {/* Benefícios */}
         <div className="hero-benefits">
           <div className="benefit-item">
             <div className="benefit-icon cognitive"></div>
@@ -67,14 +63,12 @@ function Hero() {
           </div>
         </div>
 
-        {/* Segurança */}
         <div className="hero-security">
           <span></span>
           Seus dados são protegidos com total confidencialidade.
         </div>
       </div>
 
-      {/* Imagem da Erika */}
       <div className="hero-image-wrapper">
         <div className="hero-image">
           <img src={erika} alt="Erika, neuropsicopedagoga" />

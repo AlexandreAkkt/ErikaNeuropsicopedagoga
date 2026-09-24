@@ -1,15 +1,16 @@
+/* ================================
+   HERO
+================================ */
+
 .hero {
   min-height: 720px;
   position: relative;
   overflow: hidden;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 60px;
-
   padding: 90px 7%;
-
   font-family: var(--font-body);
 
   background:
@@ -21,6 +22,10 @@
     linear-gradient(160deg, #fffaf6 0%, #f9eee6 100%);
 }
 
+/* ================================
+   ELEMENTOS DECORATIVOS
+================================ */
+
 .hero-decoration {
   position: absolute;
   pointer-events: none;
@@ -30,10 +35,8 @@
 .hero-decoration-1 {
   width: 420px;
   height: 420px;
-
   top: -250px;
   left: -120px;
-
   border-radius: 50%;
   background: rgba(233, 154, 124, 0.12);
 }
@@ -41,10 +44,8 @@
 .hero-decoration-2 {
   width: 500px;
   height: 500px;
-
   right: -300px;
   bottom: -300px;
-
   border-radius: 50%;
   background: rgba(201, 128, 91, 0.08);
 }
@@ -56,7 +57,6 @@
 .hero-content {
   width: 52%;
   max-width: 640px;
-
   position: relative;
   z-index: 2;
 }
@@ -68,17 +68,12 @@
 .hero-tag {
   display: inline-flex;
   align-items: center;
-
   padding: 8px 16px;
   margin-bottom: 28px;
-
   border-radius: 30px;
   border: 1px solid #e8d5c8;
-
   background: rgba(255, 255, 255, 0.35);
-
-  color: var(--navy-700);
-
+  color: #0e4271;
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.2px;
@@ -90,9 +85,7 @@
 
 .hero h1 {
   margin: 0;
-
-  color: var(--navy-900);
-
+  color: #0b2a46;
   font-family: var(--font-display);
   font-size: clamp(40px, 3.8vw, 56px);
   line-height: 1.12;
@@ -102,13 +95,10 @@
 
 .hero-lede {
   display: inline-block;
-
   margin-top: 2px;
-
   font-style: italic;
   font-weight: 500;
-
-  color: var(--navy-700);
+  color: #0e4271;
 }
 
 /* ================================
@@ -118,11 +108,9 @@
 .hero-line {
   width: 56px;
   height: 3px;
-
   margin: 26px 0 24px;
-
   border-radius: 20px;
-  background: var(--clay-500);
+  background: #c9805b;
 }
 
 /* ================================
@@ -131,12 +119,9 @@
 
 .hero p {
   margin: 0;
-
-  color: var(--slate);
-
+  color: #475569;
   font-size: 17px;
   line-height: 1.7;
-
   max-width: 480px;
 }
 
@@ -152,47 +137,39 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
   padding: 16px 32px;
   min-width: 220px;
-
   border-radius: 10px;
   border: none;
-
-  background: var(--navy-900);
-  color: #ffffff;
-
-  font-family: var(--font-body);
+  background: #0b3e6d;
+  color: #fffaf6;
   font-size: 15px;
   font-weight: 600;
   letter-spacing: 0.2px;
-
   text-decoration: none;
-
   box-shadow: 0 10px 24px rgba(11, 42, 70, 0.18);
-
   transition: background 0.25s ease;
 }
 
 .button-primary:hover {
-  background: var(--clay-600);
+  background: #3c5670;
 }
+
+/* ================================
+   BENEFÍCIOS
+================================ */
 
 .hero-benefits {
   display: flex;
-
   margin-top: 52px;
   padding-top: 30px;
-
-  border-top: 1px solid var(--line);
+  border-top: 1px solid #e2d8d0;
 }
 
 .benefit-item {
   flex: 1;
-
   padding: 0 18px;
-
-  border-right: 1px solid var(--line);
+  border-right: 1px solid #e2d8d0;
 }
 
 .benefit-item:first-child {
@@ -204,47 +181,45 @@
   border-right: none;
 }
 
+/* ================================
+   ÍCONES
+================================ */
+
 .benefit-icon {
   width: 8px;
   height: 8px;
-
   margin-bottom: 14px;
-
   border-radius: 50%;
 }
 
 .cognitive {
-  background: var(--blue-500);
-}
-
-.care {
-  background: #4caf7d;
+  background: #3b82f6;
 }
 
 .progress {
-  background: var(--clay-500);
+  background: #c9805b;
 }
 
 .together {
-  background: var(--navy-700);
+  background: #0e4271;
 }
+
+/* ================================
+   TÍTULOS DOS BENEFÍCIOS
+================================ */
 
 .benefit-item h3 {
   margin: 0 0 8px;
-
-  color: var(--navy-900);
-
+  color: #0b2a46;
   font-size: 13.5px;
   font-weight: 600;
   line-height: 1.35;
 }
 
 .benefit-item p {
-  color: var(--slate-light);
-
+  color: #64748b;
   font-size: 12.5px;
   line-height: 1.5;
-
   max-width: none;
 }
 
@@ -256,20 +231,21 @@
   display: flex;
   align-items: center;
   gap: 8px;
-
   margin-top: 26px;
-
-  color: var(--slate-light);
+  color: #64748b;
   font-size: 12px;
 }
 
 .hero-security span {
   width: 7px;
   height: 7px;
-
   border-radius: 50%;
-  background: var(--clay-500);
+  background: #c9805b;
 }
+
+/* ================================
+   IMAGEM
+================================ */
 
 .hero-image-wrapper {
   width: 46%;
@@ -323,10 +299,8 @@
 
   .benefit-item {
     flex: 0 0 50%;
-
     border-right: none;
-    border-bottom: 1px solid var(--line);
-
+    border-bottom: 1px solid #e2d8d0;
     padding-bottom: 20px;
   }
 
@@ -347,18 +321,14 @@
 @media (max-width: 768px) {
   .hero {
     flex-direction: column;
-
     text-align: center;
-
     padding: 60px 20px 70px;
-
     gap: 55px;
   }
 
   .hero-content {
     width: 100%;
     max-width: 100%;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -434,9 +404,7 @@
 
   .benefit-item {
     flex: 0 0 100%;
-
-    border-bottom: 1px solid var(--line);
-
+    border-bottom: 1px solid #e2d8d0;
     padding-bottom: 18px;
   }
 
