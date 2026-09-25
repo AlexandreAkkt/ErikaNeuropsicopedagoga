@@ -256,17 +256,44 @@
   z-index: 3;
 }
 
+/* ================================
+   DEGRADÊ ENTRE FUNDO E IMAGEM
+================================ */
+
+.hero-image-wrapper::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  left: -140px;
+  top: 0;
+  width: 260px;
+  height: 100%;
+  pointer-events: none;
+
+  background: linear-gradient(
+    to right,
+    #f9eee6 0%,
+    rgba(249, 238, 230, 0.95) 20%,
+    rgba(249, 238, 230, 0.65) 45%,
+    rgba(249, 238, 230, 0.25) 70%,
+    rgba(249, 238, 230, 0) 100%
+  );
+}
+
+/* ================================
+   CONTAINER DA IMAGEM
+================================ */
+
 .hero-image {
   width: 100%;
   max-width: 460px;
   position: relative;
-  overflow: hidden;
   border-radius: 18px;
 }
 
-.hero-image::before {
-  display: none;
-}
+/* ================================
+   IMAGEM
+================================ */
 
 .hero-image img {
   width: 100%;
@@ -386,6 +413,13 @@
   .hero-image {
     max-width: 400px;
   }
+
+  /* Degradê no celular */
+
+  .hero-image-wrapper::before {
+    left: -60px;
+    width: 120px;
+  }
 }
 
 /* ================================
@@ -410,5 +444,10 @@
 
   .benefit-item:last-child {
     border-bottom: none;
+  }
+
+  .hero-image-wrapper::before {
+    left: -20px;
+    width: 70px;
   }
 }
