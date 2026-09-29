@@ -10,7 +10,7 @@ function About() {
     <section id="about" className="about-section">
       <div className="container about">
 
-        {/* IMAGEM COM ESTILO ELEGANTE */}
+        {/* IMAGEM */}
         <div className="about-image">
           <div className="about-image-card">
             <img
@@ -28,17 +28,17 @@ function About() {
 
         {/* CONTEÚDO */}
         <div className="about-content">
-          <span className="about-tag">Erika Anjos</span>
+          <span className="about-tag">Sobre a profissional</span>
 
           <h2>
-            Cuidando do desenvolvimento
-            <span> com acolhimento e dedicação.</span>
+            Cuidando do desenvolvimento<br />
+            <span className="about-lede">com acolhimento e dedicação.</span>
           </h2>
 
           <p>
             Sou Neuropsicopedagoga e acredito que cada pessoa possui um jeito
-            único de aprender. Meu trabalho é compreender suas necessidades e
-            desenvolver estratégias que favoreçam seu desenvolvimento
+            único de aprender. Meu trabalho é compreender as suas necessidades e
+            desenvolver estratégias que favoreçam o seu desenvolvimento
             cognitivo, emocional e escolar.
           </p>
 

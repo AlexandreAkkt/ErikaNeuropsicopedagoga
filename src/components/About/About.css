@@ -1,7 +1,11 @@
+/* ================================
+   SEÇÃO ABOUT
+================================ */
 #about {
-  padding: 100px 9%;
-  /* Um fundo bem sutil e acolhedor em vez do branco puro */
-  background-color: #faf8f6; 
+  padding: 100px 7%;
+  /* Fundo num tom off-white muito subtil para não ser branco puro */
+  background-color: #fbfaf8; 
+  font-family: var(--font-body, sans-serif);
 }
 
 .about {
@@ -13,8 +17,11 @@
   margin: 0 auto;
 }
 
+/* ================================
+   IMAGEM E BADGE
+================================ */
 .about-image {
-  width: 45%;
+  width: 50%;
   display: flex;
   justify-content: center;
   position: relative;
@@ -23,152 +30,165 @@
 .about-image-card {
   position: relative;
   width: 100%;
-  max-width: 450px;
+  max-width: 520px; 
 }
 
 .about-image img {
   width: 100%;
-  height: 520px;
-  border-radius: 16px;
+  height: 660px; 
+  border-radius: 4px;
   object-fit: cover;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
 }
 
-/* Badge com detalhe inspirado na cor das flores da foto */
 .about-image-badge {
   position: absolute;
-  bottom: -20px;
-  right: -20px;
+  bottom: 30px;
+  right: -30px;
   background: #ffffff;
-  padding: 15px 20px;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  padding: 18px 24px;
+  border-radius: 0px; 
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
   display: flex;
   align-items: center;
   gap: 12px;
-  border-left: 4px solid #7c3aed; /* Tom roxo elegante alinhado à foto */
-}
-
-.about-image-badge span {
-  font-size: 20px;
-  color: #7c3aed;
+  border-left: 4px solid #a47b59; 
 }
 
 .about-image-badge strong {
   display: block;
-  font-size: 13px;
-  color: #102542;
-}
-
-.about-image-badge small {
-  font-size: 11px;
-  color: #6b7280;
-}
-
-.about-content {
-  width: 55%;
-  text-align: left;
-}
-
-/* Tag com tom lilás suave combinando com o fundo da foto */
-.about-tag {
-  display: inline-block;
-  background-color: #f3e8ff; 
-  color: #6b21a8; 
-  padding: 8px 16px;
-  border-radius: 30px;
-  font-size: 13px;
+  font-size: 14px;
+  color: #2c2a28;
   font-weight: 600;
-  margin-bottom: 20px;
-  text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
-.about-content h2 {
-  font-size: 34px;
-  color: #0b3e6d;
-  line-height: 1.2;
-  margin-bottom: 20px;
+.about-image-badge small {
+  font-size: 12px;
+  color: #8c8884;
 }
 
-.about-content h2 span {
-  display: block;
-  color: #555b6e;
+/* ================================
+   CONTEÚDO DE TEXTO
+================================ */
+.about-content {
+  width: 50%;
+  text-align: left;
+  padding-left: 30px;
+}
+
+.about-tag {
+  display: inline-block;
+  background-color: transparent;
+  border: 1px solid #d3cec6;
+  color: #a47b59; 
+  padding: 6px 14px;
+  font-size: 11px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.about-content h2 {
+  font-size: clamp(34px, 4vw, 46px);
+  color: #2c2a28;
+  font-family: "Playfair Display", serif;
   font-weight: 400;
-  font-size: 28px;
+  line-height: 1.15;
+  margin-bottom: 24px;
+  letter-spacing: -0.5px;
+}
+
+.about-lede {
+  display: block;
+  font-style: italic;
+  color: #a47b59;
 }
 
 .about-content > p {
   font-size: 16px;
-  color: #0b3e6d;
+  color: #5a5754;
   line-height: 1.7;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+  max-width: 540px;
 }
 
+/* ================================
+   GRID DE BENEFÍCIOS (FEATURES)
+================================ */
 .about-features {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  gap: 30px 20px;
 }
 
 .about-feature {
   display: flex;
   align-items: flex-start;
-  gap: 12px;
-  background: #ffffff;
-  padding: 15px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+  gap: 16px;
+  padding: 0;
+  background: transparent;
+  box-shadow: none;
 }
 
 .feature-icon {
-  background: #f3e8ff;
-  color: #7c3aed;
-  font-size: 18px;
-  width: 40px;
-  height: 40px;
-  border-radius: 8px;
+  background: #f0eae4; 
+  width: 44px;
+  height: 44px;
+  border-radius: 50%; 
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
 }
 
+.feature-icon img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
 .about-feature h3 {
-  font-size: 14px;
-  color: #102542;
-  margin-bottom: 4px;
+  font-size: 15px;
+  color: #2c2a28;
+  margin: 0 0 6px 0;
   font-weight: 600;
 }
 
 .about-feature p {
-  font-size: 12px;
-  color: #0b3e6d;
+  font-size: 13px;
+  color: #75716d;
   margin: 0;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
+/* ================================
+   RESPONSIVIDADE (TABLET & CELULAR)
+================================ */
 @media (max-width: 900px) {
   .about {
     flex-direction: column;
-    gap: 40px;
+    gap: 60px;
   }
 
   .about-image,
   .about-content {
     width: 100%;
+    padding-left: 0; /* Remove o espaçamento extra em telas pequenas */
   }
 
   .about-image img {
-    height: 400px;
+    height: 450px;
   }
 
   .about-image-badge {
-    right: 10px;
-    bottom: -15px;
+    right: 20px;
+    bottom: -20px;
   }
 
   .about-features {
     grid-template-columns: 1fr;
+    gap: 24px;
   }
 }
