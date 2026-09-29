@@ -1,207 +1,179 @@
-/* Seção de contato */
-
+/* ================================
+   SEÇÃO CONTATO
+================================ */
 #contact {
-  padding: 90px 10%;
-  background-color: #f8fbff;
+  padding: 100px 7%;
+  background-color: #fbfaf8; /* Off-white neutro idêntico ao About e Services */
+  box-sizing: border-box;
+  font-family: var(--font-body, sans-serif);
 }
 
 /* Container principal */
-
 #contact .container {
   max-width: 1200px;
   margin: 0 auto;
 }
 
 /* Título */
-
 .contact-title {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
-.contact-title p {
-  font-size: 17px;
-  color: #6b7280;
-  line-height: 1.6;
-}
-
-/* Área dos cards */
-
+/* ================================
+   ÁREA DOS CARDS
+================================ */
 .contact-content {
   display: flex;
   justify-content: center;
-  gap: 25px;
+  gap: 32px;
   flex-wrap: wrap;
 }
 
-/* Card */
-
+/* Card individual */
 .contact-card {
-  width: 330px;
+  width: 350px;
   min-height: 230px;
   padding: 35px 25px;
-
   background-color: #ffffff;
-  border: 1px solid #dbeafe;
-  border-radius: 16px;
-
+  border: 1px solid #f0eae4;
+  border-radius: 0px; /* Cantos retos alinhados ao design system */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   text-align: center;
   box-sizing: border-box;
+  box-shadow: none;
+  transition: all 0.3s ease;
+}
 
-  box-shadow: 0 6px 20px rgba(16, 37, 66, 0.05);
+.contact-card:hover {
+  border-color: #d3cec6;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.04);
+  transform: translateY(-5px);
 }
 
 /* Ícone */
-
 .contact-icon {
   display: flex;
   align-items: center;
   justify-content: center;
-
   margin-bottom: 18px;
-
-  color: #0b3e6d;
+  color: #a47b59; /* Tom terroso padrão */
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 /* Título do card */
-
 .contact-card h3 {
   margin: 0 0 8px;
-
-  color: #102542;
-  font-size: 20px;
+  color: #2c2a28;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 /* Descrição */
-
 .contact-card p {
   margin: 0 0 14px;
-
-  color: #6b7280;
-  font-size: 15px;
+  color: #75716d;
+  font-size: 14px;
   line-height: 1.5;
 }
 
 /* Links */
-
 .contact-card a {
-  color: #18c2bf;
-
+  color: #a47b59; /* Cor de destaque em vez do ciano/verde antigo */
   text-decoration: none;
-
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
-
   overflow-wrap: break-word;
   word-break: break-word;
+  transition: color 0.2s ease;
 }
 
 .contact-card a:hover {
   text-decoration: underline;
+  color: #2c2a28;
 }
 
-/* Chamada final */
-
+/* ================================
+   CHAMADA FINAL (CTA)
+================================ */
 .contact-cta {
   max-width: 700px;
-
-  margin: 55px auto 0;
-  padding: 35px 25px;
-
+  margin: 70px auto 0;
+  padding: 45px 30px;
   text-align: center;
-
-  background-color: #14202c;
-  border-radius: 16px;
+  background-color: #2c2a28; /* Fundo carvão escuro elegante */
+  border-radius: 0px; /* Cantos retos */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
 }
 
 /* Título da chamada */
-
 .contact-cta h3 {
   margin: 0 0 10px;
-
   color: #ffffff;
-  font-size: 24px;
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  font-weight: 400;
 }
 
 /* Texto da chamada */
-
 .contact-cta p {
-  margin: 0 0 25px;
-
-  color: #e5edf5;
-  font-size: 16px;
+  margin: 0 0 30px;
+  color: #d3cec6;
+  font-size: 15px;
   line-height: 1.6;
 }
 
-/* Botão */
-
+/* Botão da CTA */
 .contact-button {
   display: inline-block;
-
-  padding: 13px 25px;
-
+  padding: 16px 32px;
   background-color: #ffffff;
-  color: #1e252b;
-
-  border-radius: 8px;
-
+  color: #2c2a28;
+  border-radius: 0px; /* Cantos retos */
   text-decoration: none;
-
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
 }
 
 .contact-button:hover {
-  background-color: #f1f5f9;
+  background-color: #f0eae4;
 }
 
-/* Responsividade */
-
+/* ================================
+   RESPONSIVIDADE
+================================ */
 @media (max-width: 768px) {
   #contact {
-    padding: 60px 20px;
-  }
-
-  .contact-title {
-    margin-bottom: 35px;
-  }
-
-  .contact-title p {
-    font-size: 16px;
-    line-height: 1.6;
+    padding: 70px 5%;
   }
 
   .contact-content {
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 24px;
   }
 
   .contact-card {
     width: 100%;
-    max-width: 380px;
-    min-height: 210px;
+    max-width: 100%;
+    min-height: 200px;
     padding: 30px 20px;
-  }
-
-  .contact-card h3 {
-    font-size: 19px;
-  }
-
-  .contact-card a {
-    font-size: 15px;
   }
 
   .contact-cta {
-    margin-top: 40px;
-    padding: 30px 20px;
+    margin-top: 50px;
+    padding: 35px 20px;
   }
 
   .contact-cta h3 {
-    font-size: 21px;
+    font-size: 26px;
   }
 }

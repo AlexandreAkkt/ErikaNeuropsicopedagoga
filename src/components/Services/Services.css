@@ -1,34 +1,39 @@
+/* ================================
+   SEÇÃO SERVIÇOS
+================================ */
 #services {
-  padding: 90px 9%;
-  background-color: #f4f7fb;
+  padding: 100px 7%; /* Alinhado com as outras seções (7%) */
+  background-color: #fbfaf8; /* Tom off-white neutro para manter a harmonia */
+  box-sizing: border-box;
+  font-family: var(--font-body, sans-serif);
 }
 
 /* Container dos cards */
-
 .services-container {
   max-width: 1200px;
-  margin: 50px auto 0;
-
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-
-  gap: 24px;
+  gap: 32px; /* Maior espaçamento para dar elegância */
 }
 
+/* ================================
+   RESPONSIVIDADE
+================================ */
 @media (max-width: 1024px) {
   .services-container {
     grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
   }
 }
 
 @media (max-width: 768px) {
   #services {
-    padding: 60px 20px;
+    padding: 70px 5%;
   }
 
   .services-container {
     grid-template-columns: 1fr;
-    margin-top: 32px;
     gap: 20px;
   }
 }

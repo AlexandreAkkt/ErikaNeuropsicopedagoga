@@ -1,6 +1,5 @@
 import "./Services.css";
 import Title from "../Text/Title";
-
 import Card from "../Card/Card";
 
 import capeloIcon from "../../assets/capelo.png";
@@ -14,7 +13,8 @@ function Services() {
   return (
     <section id="services">
       <Title
-        title="Serviços"
+        tag="O que fazemos"
+        title="Serviços especializados."
         description="Atendimento neuropsicopedagógico personalizado para crianças, adolescentes e suas famílias."
       />
 

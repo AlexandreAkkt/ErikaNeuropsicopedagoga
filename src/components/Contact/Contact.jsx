@@ -1,13 +1,16 @@
-import Title from "../Text/Title";
 import "./Contact.css";
+import Title from "../Text/Title";
 
 function Contact() {
   return (
     <section id="contact">
       <div className="container">
+        
+        {/* Usando o componente Title padrão com a tag */}
         <div className="contact-title">
           <Title
-            title="Entre em contato"
+            tag="Fale Conosco"
+            title="Entre em contato."
             description="Estou à disposição para esclarecer dúvidas e fornecer mais informações."
           />
         </div>
@@ -17,11 +20,8 @@ function Contact() {
             <div className="contact-icon">
               <span>WhatsApp</span>
             </div>
-
             <h3>WhatsApp</h3>
-
             <p>Fale comigo pelo WhatsApp</p>
-
             <a
               href="https://wa.me/5511950501988"
               target="_blank"
@@ -35,11 +35,8 @@ function Contact() {
             <div className="contact-icon">
               <span>E-mail</span>
             </div>
-
             <h3>E-mail</h3>
-
             <p>Envie sua mensagem por e-mail</p>
-
             <a href="mailto:erikasantanaanjos@gmail.com">
               erikasantanaanjos@gmail.com
             </a>
@@ -49,11 +46,8 @@ function Contact() {
             <div className="contact-icon">
               <span>Instagram</span>
             </div>
-
             <h3>Instagram</h3>
-
             <p>Acompanhe meu trabalho</p>
-
             <a
               href="https://www.instagram.com/erikaanjos.neuropp"
               target="_blank"
@@ -66,12 +60,10 @@ function Contact() {
 
         <div className="contact-cta">
           <h3>Vamos conversar?</h3>
-
           <p>
             Entre em contato para saber mais sobre a avaliação e o
             acompanhamento.
           </p>
-
           <a
             href="https://wa.me/5511950501988"
             target="_blank"
@@ -81,6 +73,7 @@ function Contact() {
             Falar pelo WhatsApp
           </a>
         </div>
+
       </div>
     </section>
   );
