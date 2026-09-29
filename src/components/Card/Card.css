@@ -3,24 +3,25 @@
    ========================================================================== */
 
 .card {
-  background-color: #ffffff;
-  border: 1px solid #e2e8f0;
-  border-radius: 14px;
-  padding: 28px;
+  background-color: #fbfaf8; /* Bege bem clarinho (off-white) */
+  border: 1px solid #f0eae4; /* Borda bem suave */
+  border-radius: 0px; /* Cantos retos clássicos, alinhados aos botões */
+  padding: 32px 24px;
   min-height: 230px;
   box-sizing: border-box;
   text-align: left;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+  box-shadow: none; /* Sem sombra no estado normal para design "flat" e limpo */
   display: flex;
   flex-direction: column;
-  transition:
-    border-color 0.2s ease,
-    box-shadow 0.2s ease;
+  transition: all 0.3s ease;
+  font-family: var(--font-body, sans-serif);
 }
 
 .card:hover {
-  border-color: #cbd5e1;
-  box-shadow: 0 8px 18px rgba(15, 62, 109, 0.07);
+  background-color: #ffffff; /* Fica branco puro ao passar o mouse */
+  border-color: #d3cec6;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.04); /* Sombra elegante e suave */
+  transform: translateY(-5px); /* Efeito flutuante delicado */
 }
 
 /* Área do ícone padrão */
@@ -31,15 +32,15 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 22px;
-  background-color: #e6e7ff;
-  border-radius: 12px;
+  background-color: #f0eae4; /* Substitui o fundo roxo antigo pelo bege */
+  border-radius: 50%; /* Círculo perfeito, igual aos ícones do About */
   overflow: hidden;
   flex-shrink: 0;
 }
 
 .card-icon img {
-  width: 30px;
-  height: 30px;
+  width: 26px;
+  height: 26px;
   object-fit: contain;
   display: block;
 }
@@ -47,7 +48,7 @@
 /* Conteúdo */
 .card-content h3 {
   margin: 0 0 10px;
-  color: #0b3e6d;
+  color: #2c2a28; /* Cor carvão/cinza escuro da nova identidade */
   font-size: 1.05rem;
   font-weight: 600;
   line-height: 1.35;
@@ -55,7 +56,7 @@
 
 .card-content p {
   margin: 0;
-  color: #64748b;
+  color: #75716d; /* Cinza terroso */
   font-size: 0.9rem;
   line-height: 1.6;
 }
@@ -64,10 +65,15 @@
    VARIANTE LARGE (Utilizado exclusivamente na seção de Áreas)
    ========================================================================== */
 
+.card.card-large {
+  text-align: center; /* Centraliza o texto para o visual de "Áreas" */
+  align-items: center;
+}
+
 .card.card-large .card-icon {
   width: 120px;
   height: 120px;
-  background-color: transparent; /* Remove a caixa roxo/azul */
+  background-color: transparent; /* Mantém transparente sem caixa */
   border-radius: 0;
   overflow: visible;
   margin-bottom: 16px;

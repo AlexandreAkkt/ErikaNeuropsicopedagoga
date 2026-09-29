@@ -1,39 +1,46 @@
+/* ================================
+   SEÇÃO ÁREAS DE ATUAÇÃO
+================================ */
 #areas {
   width: 100%;
-  padding: 90px 10%;
-  background-color: #f8fafc;
+  padding: 100px 7%;
+  background-color: #ffffff; /* Branco puro para criar contraste com a seção About */
   box-sizing: border-box;
+  font-family: var(--font-body, sans-serif);
 }
 
+/* ================================
+   GRID DE CARDS
+================================ */
 .areas-grid {
   max-width: 1200px;
   margin: 0 auto;
-
-  display: grid; /*alternativa ao flex*/
+  display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
+  gap: 32px; /* Gap aumentado para maior respiro elegante */
 }
 
-/* Tablet */
+/* ================================
+   RESPONSIVIDADE
+================================ */
 @media (max-width: 1024px) {
+  #areas {
+    padding: 80px 5%;
+  }
+  
+  .areas-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
   #areas {
     padding: 70px 5%;
   }
-
-  .areas-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-}
-
-/* Celular */
-@media (max-width: 768px) {
-  #areas {
-    padding: 60px 5%;
-  }
-
+  
   .areas-grid {
     grid-template-columns: 1fr;
-    gap: 18px;
+    gap: 20px;
   }
 }
