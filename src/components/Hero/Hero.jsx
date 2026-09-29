@@ -1,24 +1,25 @@
 import "./Hero.css";
-import erika from "../../assets/neuroerika.png";
+import erika from "../../assets/quadro.png";
 
 function Hero() {
   return (
     <section className="hero">
-      <div className="hero-decoration hero-decoration-1"></div>
-      <div className="hero-decoration hero-decoration-2"></div>
+      {/* Fundo com a imagem e degradê sobreposto */}
+      <div className="hero-bg">
+        <img src={erika} alt="Erika, neuropsicopedagoga" />
+        <div className="hero-overlay"></div>
+      </div>
 
+      {/* Conteúdo principal de texto e botões */}
       <div className="hero-content">
         <span className="hero-tag">
-          Cuidado especializado para o desenvolvimento
+          Atendimento Especializado — São Paulo
         </span>
 
         <h1>
-          Neuropsicopedagogia
-          <br />
+          Neuropsicopedagogia.<br />
           <span className="hero-lede">com afeto e ciência.</span>
         </h1>
-
-        <div className="hero-line"></div>
 
         <p>
           Apoio especializado para crianças, adolescentes e adultos que
@@ -35,43 +36,9 @@ function Hero() {
           >
             Enviar Anamnese
           </a>
-        </div>
-
-        <div className="hero-benefits">
-          <div className="benefit-item">
-            <div className="benefit-icon cognitive"></div>
-            <h3>Avaliação Cognitiva</h3>
-            <p>Entendimento profundo e único.</p>
-          </div>
-
-          <div className="benefit-item">
-            <div className="benefit-icon care"></div>
-            <h3>Acolher, entender e potencializar.</h3>
-            <p>Cada história importa.</p>
-          </div>
-
-          <div className="benefit-item">
-            <div className="benefit-icon progress"></div>
-            <h3>Cada conquista importa.</h3>
-            <p>Valorizar cada passo alcançado.</p>
-          </div>
-
-          <div className="benefit-item">
-            <div className="benefit-icon together"></div>
-            <h3>Juntos, transformamos desafios.</h3>
-            <p>Desenvolvimento com propósito.</p>
-          </div>
-        </div>
-
-        <div className="hero-security">
-          <span></span>
-          Seus dados são protegidos com total confidencialidade.
-        </div>
-      </div>
-
-      <div className="hero-image-wrapper">
-        <div className="hero-image">
-          <img src={erika} alt="Erika, neuropsicopedagoga" />
+          <a href="#contato" className="button-secondary">
+            Pedir Informações
+          </a>
         </div>
       </div>
     </section>
