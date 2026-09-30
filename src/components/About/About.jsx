@@ -42,7 +42,7 @@ function About() {
             cognitivo, emocional e escolar.
           </p>
 
-          {/* CARDS DE DIFERENCIAIS */}
+       
           <div className="about-features">
             
             <div className="about-feature">
