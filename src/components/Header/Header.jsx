@@ -1,5 +1,5 @@
 import "./Header.css";
-import logo from "../../assets/mineLogo.png";
+import logo from "../../assets/EA.png";
 
 function Header() {
   return (
