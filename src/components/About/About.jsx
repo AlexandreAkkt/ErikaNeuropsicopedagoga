@@ -1,5 +1,5 @@
 import "./About.css";
-import erikaAbout from "../../assets/erika.png";
+import erikaAbout from "../../assets/erikabout.png";
 import estudoImg from "../../assets/estudo.png";
 import coracaoImg from "../../assets/coracaoo.png";
 import lupaImg from "../../assets/lupa.png";
