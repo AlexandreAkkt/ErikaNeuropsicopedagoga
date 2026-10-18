@@ -1,6 +1,4 @@
-/* ================================
-   COMPONENTE TITLE
-================================ */
+
 .title-card {
   display: flex;
   flex-direction: column;
@@ -11,9 +9,7 @@
   font-family: var(--font-body, sans-serif);
 }
 
-/* ================================
-   TAG SUPERIOR
-================================ */
+
 .title-tag {
   display: inline-block;
   background-color: transparent;
@@ -27,9 +23,7 @@
   letter-spacing: 2px;
 }
 
-/* ================================
-   TÍTULO PRINCIPAL
-================================ */
+
 .title-card h2 {
   margin: 0 0 20px 0;
   color: #2c2a28;
@@ -40,9 +34,7 @@
   letter-spacing: -0.5px;
 }
 
-/* ================================
-   DESCRIÇÃO
-================================ */
+
 .title-card p {
   margin: 0;
   color: #5a5754;
@@ -50,9 +42,7 @@
   line-height: 1.7;
 }
 
-/* ================================
-   RESPONSIVIDADE
-================================ */
+
 @media (max-width: 768px) {
   .title-card {
     margin-bottom: 40px;

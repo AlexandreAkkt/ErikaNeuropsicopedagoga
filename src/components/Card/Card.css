@@ -1,6 +1,4 @@
-/* ==========================================================================
-   ESTILO PADRÃO (Utilizado nos Serviços e outros cards padrão)
-   ========================================================================== */
+
 
 .card {
   background-color: #fbfaf8; /* Bege bem clarinho (off-white) */
@@ -61,9 +59,7 @@
   line-height: 1.6;
 }
 
-/* ==========================================================================
-   VARIANTE LARGE (Utilizado exclusivamente na seção de Áreas)
-   ========================================================================== */
+
 
 .card.card-large {
   text-align: center; /* Centraliza o texto para o visual de "Áreas" */

@@ -1,6 +1,4 @@
-/* ================================
-   SEÇÃO FOOTER
-================================ */
+
 .footer {
   position: relative;
   background-color: #2c2a28; /* Tom carvão escuro elegante, combinando com o CTA de contato */
@@ -16,7 +14,6 @@
   border-top: 1px solid #3f3c39;
 }
 
-/* Nome da marca */
 .footer h2 {
   font-family: "Playfair Display", serif;
   font-size: 26px;
@@ -41,9 +38,9 @@
   color: #a47b59; /* Tom terroso de destaque */
 }
 
-/* Descrição do rodapé */
+
 .footer p {
-  color: #d3cec6; /* Cinza claro suave */
+  color: #d3cec6; /* Cinza claro  */
   font-size: 15px;
   margin: 0;
   line-height: 1.6;
@@ -64,9 +61,7 @@
   margin: 0;
 }
 
-/* ================================
-   RESPONSIVIDADE
-================================ */
+
 @media (max-width: 768px) {
   .footer {
     padding: 50px 5% 30px;

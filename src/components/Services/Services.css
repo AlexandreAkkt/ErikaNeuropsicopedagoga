@@ -1,6 +1,4 @@
-/* ================================
-   SEÇÃO SERVIÇOS
-================================ */
+
 #services {
   padding: 100px 7%; /* Alinhado com as outras seções (7%) */
   background-color: #fbfaf8; /* Tom off-white neutro para manter a harmonia */
@@ -17,9 +15,7 @@
   gap: 32px; /* Maior espaçamento para dar elegância */
 }
 
-/* ================================
-   RESPONSIVIDADE
-================================ */
+
 @media (max-width: 1024px) {
   .services-container {
     grid-template-columns: repeat(2, 1fr);

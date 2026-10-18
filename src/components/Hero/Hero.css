@@ -1,6 +1,4 @@
-/* ================================
-   HERO - FULL SCREEN
-================================ */
+
 
 .hero {
   min-height: 100vh;
@@ -12,9 +10,7 @@
   font-family: var(--font-body, sans-serif);
 }
 
-/* ================================
-   IMAGEM DE FUNDO E DEGRADÊ
-================================ */
+
 
 .hero-bg {
   position: absolute;
@@ -42,9 +38,6 @@
   );
 }
 
-/* ================================
-   CONTEÚDO
-================================ */
 
 .hero-content {
   position: relative;
@@ -56,9 +49,7 @@
   gap: 24px;
 }
 
-/* ================================
-   TIPOGRAFIA
-================================ */
+
 
 .hero-tag {
   font-size: 11px;
@@ -93,9 +84,7 @@
   max-width: 480px;
 }
 
-/* ================================
-   BOTÕES LADO A LADO
-================================ */
+
 
 .hero-buttons {
   display: flex;
@@ -139,9 +128,7 @@
   background: rgba(0, 0, 0, 0.05);
 }
 
-/* ================================
-   CELULARES E TABLETS
-================================ */
+
 
 @media (max-width: 768px) {
   .hero {

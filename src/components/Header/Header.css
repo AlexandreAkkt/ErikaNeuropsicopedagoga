@@ -1,6 +1,4 @@
-/* ================================
-   HEADER
-================================ */
+
 .site-header {
   align-items: center;
   background-color: #fbfaf8; /* Mesmo tom de off-white do About */
@@ -23,9 +21,7 @@
   width: 75px;
 }
 
-/* ================================
-   MENU DE NAVEGAÇÃO
-================================ */
+
 .site-menu {
   align-items: center;
   display: flex;
@@ -67,9 +63,7 @@
   clip: rect(0, 0, 0, 0);
 }
 
-/* ================================
-   BOTÃO DE AGENDAMENTO
-================================ */
+
 .agendar-btn {
   background-color: #1a1a1a;
   color: #ffffff;
@@ -89,9 +83,7 @@
   border-color: #333333;
 }
 
-/* ================================
-   RESPONSIVIDADE (CELULARES)
-================================ */
+
 @media (max-width: 768px) {
   .site-header {
     padding: 12px 5%;
@@ -137,7 +129,7 @@
     transform: translateY(-7px) rotate(-45deg);
   }
 
-  /* Menu Aberto (Mobile) */
+ 
   .site-menu {
     background-color: #ffffff;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
