@@ -16,7 +16,7 @@ function Areas() {
     <section id="areas" className="areas-section">
       <Title
         tag="Especialidades"
-        title="Nossas áreas de atuação."
+        title=" Áreas de atuação."
         description="Atendimento neuropsicopedagógico personalizado para crianças, adolescentes e orientação familiar."
       />
 

@@ -1,3 +1,4 @@
+
 import "./Header.css";
 import logo from "../../assets/EA.png";
 
@@ -9,6 +10,7 @@ function Header() {
       </a>
 
       <input className="menu-checkbox" type="checkbox" id="menu-toggle" />
+
       <label className="menu-toggle" htmlFor="menu-toggle">
         <span aria-hidden="true" />
         <span aria-hidden="true" />
@@ -33,7 +35,14 @@ function Header() {
         </li>
 
         <li className="agendar-item">
-          <button className="agendar-btn">Agendar Consulta</button>
+          <a
+            className="agendar-btn"
+            href="https://wa.me/5511950501988?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta."
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Agendar Consulta
+          </a>
         </li>
       </ul>
     </nav>

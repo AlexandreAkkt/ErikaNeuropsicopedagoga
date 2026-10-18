@@ -1,11 +1,11 @@
 
 .site-header {
   align-items: center;
-  background-color: #fbfaf8; /* Mesmo tom de off-white do About */
+  background-color: #fbfaf8;
   display: flex;
   gap: 32px;
   justify-content: space-between;
-  padding: 14px 7%; /* Alinhado com as margens laterais do Hero/About */
+  padding: 14px 7%;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -21,7 +21,6 @@
   width: 75px;
 }
 
-
 .site-menu {
   align-items: center;
   display: flex;
@@ -31,7 +30,7 @@
 }
 
 .site-menu a {
-  color: #2c2a28; /* Cor carvão/cinza escuro do texto do About */
+  color: #2c2a28;
   font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
@@ -42,7 +41,7 @@
 
 .site-menu a:hover,
 .site-menu a:focus-visible {
-  color: #a47b59; /* Tom de dourado/castanho do About no hover */
+  color: #a47b59;
 }
 
 .agendar-item {
@@ -63,8 +62,12 @@
   clip: rect(0, 0, 0, 0);
 }
 
+/* ================================
+   BOTÃO AGENDAR CONSULTA
+================================ */
 
-.agendar-btn {
+.site-menu a.agendar-btn {
+  display: inline-block;
   background-color: #1a1a1a;
   color: #ffffff;
   border: 1px solid #1a1a1a;
@@ -74,15 +77,22 @@
   font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
-  border-radius: 0px; /* Cantos retos combinando com o Hero */
+  text-decoration: none;
+  text-align: center;
+  border-radius: 0;
   transition: all 0.3s ease;
 }
 
-.agendar-btn:hover {
+.site-menu a.agendar-btn:hover,
+.site-menu a.agendar-btn:focus-visible {
   background-color: #333333;
   border-color: #333333;
+  color: #ffffff;
 }
 
+/* ================================
+   RESPONSIVIDADE - CELULAR
+================================ */
 
 @media (max-width: 768px) {
   .site-header {
@@ -94,7 +104,7 @@
     width: 65px;
   }
 
-  /* Hamburger Menu */
+  /* Menu hambúrguer */
   .menu-toggle {
     align-items: flex-end;
     cursor: pointer;
@@ -105,7 +115,7 @@
   }
 
   .menu-toggle span {
-    background-color: #2c2a28; /* Substitui o azul antigo pelo cinza escuro */
+    background-color: #2c2a28;
     display: block;
     height: 2px;
     transition: transform 0.2s ease, opacity 0.2s ease;
@@ -129,7 +139,6 @@
     transform: translateY(-7px) rotate(-45deg);
   }
 
- 
   .site-menu {
     background-color: #ffffff;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
@@ -165,10 +174,25 @@
   .agendar-item {
     justify-content: center;
     padding: 20px;
+    box-sizing: border-box;
   }
 
-  .agendar-item .agendar-btn {
+  /* Botão do WhatsApp no celular */
+  .site-menu .agendar-item a.agendar-btn {
     display: block;
     width: 100%;
+    box-sizing: border-box;
+    padding: 14px 20px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border: 1px solid #1a1a1a;
+    text-decoration: none;
+  }
+
+  .site-menu .agendar-item a.agendar-btn:hover,
+  .site-menu .agendar-item a.agendar-btn:focus-visible {
+    background-color: #333333;
+    border-color: #333333;
+    color: #ffffff;
   }
 }
