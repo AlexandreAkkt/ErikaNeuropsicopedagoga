@@ -1,3 +1,4 @@
+
 import "./Hero.css";
 import erika from "../../assets/quadro.png";
 
@@ -36,8 +37,9 @@ function Hero() {
           >
             Enviar Anamnese
           </a>
-          <a href="#contato" className="button-secondary">
-            Pedir Informações
+
+          <a href="#services" className="button-secondary">
+            Conheça os atendimentos
           </a>
         </div>
       </div>
